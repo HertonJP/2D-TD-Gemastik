@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 229071184}
   m_Layer: 0
-  m_Name: Waypoint
+  m_Name: Waypoint Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -549,8 +549,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1694424993}
   m_Layer: 0
-  m_Name: Waypoint (3)
-  m_TagString: Untagged
+  m_Name: Waypoint End
+  m_TagString: End
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -701,6 +701,7 @@ GameObject:
   - component: {fileID: 2143303813}
   - component: {fileID: 2143303812}
   - component: {fileID: 2143303811}
+  - component: {fileID: 2143303814}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -721,7 +722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: {fileID: 878965561}
-  speed: 2
+  speed: 5
   distanceThreshold: 0.2
 --- !u!212 &2143303812
 SpriteRenderer:
@@ -790,3 +791,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2143303814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143303810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60fcec91db91224dae33c1136827aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 2143303810}
+  waypoints: {fileID: 878965561}
+  baseEnemies: 8
+  enemiesPerSecond: 1
+  timeBetweenWaves: 10
+  difficultyScalingFactor: 0.75

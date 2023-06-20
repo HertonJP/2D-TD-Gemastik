@@ -25,6 +25,11 @@ public class AI : MonoBehaviour
         if(Vector2.Distance(transform.position, currentWaypoint.position) <= distanceThreshold)
         {
             currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
+
+            if (currentWaypoint == waypoints.transform.GetChild(0))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

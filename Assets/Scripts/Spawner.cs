@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Spawner : MonoBehaviour
 {
@@ -12,12 +13,23 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float timeBetweenWaves = 10f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
 
+    public static UnityEvent onEnemyDestroy = new UnityEvent();
+
     private int currentWave = 1;
     private float timeSinceLastSpawn;
     private int enemiesAlive;
     private int enemiesLeftToSpawn;
     private bool isSpawning = false;
 
+    private void Awake()
+    {
+        onEnemyDestroy.AddListener(enemyDestroyed);
+    }
+    private void enemyDestroyed()
+    {
+        Debug.Log("enemy berkurang");
+        enemiesAlive--;
+    }
     private void Start()
     {
         StartWave();

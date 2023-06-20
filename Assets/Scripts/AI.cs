@@ -7,7 +7,9 @@ public class AI : MonoBehaviour
     [SerializeField] private Waypoints waypoints;
     [SerializeField] private float speed = 2f;
     [SerializeField] private float distanceThreshold = 0.2f;
+    
     private Transform currentWaypoint;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,7 @@ public class AI : MonoBehaviour
             if (currentWaypoint == waypoints.transform.GetChild(0))
             {
                 Destroy(gameObject);
+                Spawner.onEnemyDestroy.Invoke();
             }
         }
     }

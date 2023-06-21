@@ -371,7 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: {fileID: 878965561}
   speed: 2
-  distanceThreshold: 0.2
+  distanceThreshold: 0.1
 --- !u!114 &566049810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,8 +387,8 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 427524886}
   waypoints: {fileID: 878965561}
-  baseEnemies: 3
-  enemiesPerSecond: 1
+  baseEnemies: 5
+  enemiesPerSecond: 1.5
   timeBetweenWaves: 10
   difficultyScalingFactor: 0.75
 --- !u!4 &566049811

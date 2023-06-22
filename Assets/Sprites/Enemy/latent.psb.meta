@@ -93,7 +93,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: eyes Copy
+  - name: front arm
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,9 +102,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 195
-      width: 133
-      height: 48
-    spriteID: b32ee9a70f4b7bb40aecccff8c60b6c1
+      width: 75
+      height: 84
+    spriteID: 9a9c8123c04334b4287cd9b554ee2290
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -114,30 +114,8 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 195}
-    spritePosition: {x: 75, y: 89}
-  - name: front arm Copy
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 251
-      width: 75
-      height: 84
-    spriteID: b278f52eccb4855418312b4cb058c975
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 251}
     spritePosition: {x: 19, y: 17}
-  - name: body Copy
+  - name: body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -148,7 +126,7 @@ ScriptedImporter:
       y: 4
       width: 226
       height: 183
-    spriteID: ba80d0fae9c1f3546a7eb94a8684a9ff
+    spriteID: 675be4ea469bc7d4688fe41ea833eb91
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,7 +137,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
     spritePosition: {x: 23, y: 20}
-  - name: front arm Copy 2
+  - name: back arm
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -167,10 +145,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 343
+      y: 287
       width: 75
       height: 73
-    spriteID: 52ed147d7c7a23b45bb01cdf9e25c644
+    spriteID: c5783dd686187b04581be3c4de6e63de
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -179,7 +157,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 343}
+    uvTransform: {x: 4, y: 287}
     spritePosition: {x: 202, y: 25}
   characterData:
     bones: []
@@ -215,49 +193,59 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: c735372feb99b174fb8c8a62c7b22f4b
+    spriteID: 0a1d0d31bba87354face6b5e99a8c13a
     layerID: 0
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: eyes Copy
-    spriteName: eyes Copy
+  - name: eyes
+    spriteName: 
     isGroup: 0
     parentIndex: 0
-    spriteID: b32ee9a70f4b7bb40aecccff8c60b6c1
-    layerID: 917781247
+    spriteID: ebf4ac36fdb858f42999e13e208f90c8
+    layerID: -1354786256
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: front arm
+    spriteName: front arm
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9a9c8123c04334b4287cd9b554ee2290
+    layerID: -1689708693
     mosaicPosition: {x: 4, y: 195}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: front arm Copy
-    spriteName: front arm Copy
+  - name: mouth
+    spriteName: 
     isGroup: 0
     parentIndex: 0
-    spriteID: b278f52eccb4855418312b4cb058c975
-    layerID: 1941368280
-    mosaicPosition: {x: 4, y: 251}
+    spriteID: 468c5b3150b150748b814256ad68deae
+    layerID: -676746005
+    mosaicPosition: {x: 0, y: 0}
     flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: body Copy
-    spriteName: body Copy
+    isImported: 0
+    isVisible: 0
+  - name: body
+    spriteName: body
     isGroup: 0
     parentIndex: 0
-    spriteID: ba80d0fae9c1f3546a7eb94a8684a9ff
-    layerID: 1920527445
+    spriteID: 675be4ea469bc7d4688fe41ea833eb91
+    layerID: -911353822
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: front arm Copy 2
-    spriteName: front arm Copy 2
+  - name: back arm
+    spriteName: back arm
     isGroup: 0
     parentIndex: 0
-    spriteID: 52ed147d7c7a23b45bb01cdf9e25c644
-    layerID: 2060350930
-    mosaicPosition: {x: 4, y: 343}
+    spriteID: c5783dd686187b04581be3c4de6e63de
+    layerID: 1245722885
+    mosaicPosition: {x: 4, y: 287}
     flatten: 0
     isImported: 1
     isVisible: 1

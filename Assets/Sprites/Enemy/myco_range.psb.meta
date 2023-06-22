@@ -93,7 +93,7 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: eyes
+  - name: front arm
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,9 +102,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 305
-      width: 135
-      height: 143
-    spriteID: a332447d4a90bbe48a0ac76b6bb27393
+      width: 75
+      height: 66
+    spriteID: 5800a808ad75bc847b4dbdda850c25e7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -114,28 +114,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 305}
-    spritePosition: {x: 133, y: 55}
-  - name: front arm
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 147
-      y: 305
-      width: 75
-      height: 66
-    spriteID: 153bad6f952a03842a1c863763604056
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 147, y: 305}
     spritePosition: {x: 58, y: 21}
   - name: body
     originalName: 
@@ -148,7 +126,7 @@ ScriptedImporter:
       y: 4
       width: 227
       height: 293
-    spriteID: da23f1ecf71a7e045b7ce38a772a9e6d
+    spriteID: a0fcea938a6784144b2df40f510c9b92
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -166,11 +144,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 147
-      y: 379
+      x: 87
+      y: 305
       width: 75
       height: 66
-    spriteID: 06100c8b1fd52ac4b809771d7aafe207
+    spriteID: 959bae99bb5c12e46bc39c3ea6a2ceeb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -179,7 +157,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 147, y: 379}
+    uvTransform: {x: 87, y: 305}
     spritePosition: {x: 268, y: 21}
   characterData:
     bones: []
@@ -215,29 +193,29 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 7d14f74199333c841925d673c2dd62ec
+    spriteID: a1167a296a76e1d4a8cb8e3640d1fe46
     layerID: 0
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
     isVisible: 1
   - name: eyes
-    spriteName: eyes
+    spriteName: 
     isGroup: 0
     parentIndex: 0
-    spriteID: a332447d4a90bbe48a0ac76b6bb27393
+    spriteID: 97c5fc0c6ebdcdb48bfa76e0a56d2a7e
     layerID: -1354786256
-    mosaicPosition: {x: 4, y: 305}
+    mosaicPosition: {x: 0, y: 0}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: front arm
     spriteName: front arm
     isGroup: 0
     parentIndex: 0
-    spriteID: 153bad6f952a03842a1c863763604056
+    spriteID: 5800a808ad75bc847b4dbdda850c25e7
     layerID: -1689708693
-    mosaicPosition: {x: 147, y: 305}
+    mosaicPosition: {x: 4, y: 305}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -245,7 +223,7 @@ ScriptedImporter:
     spriteName: body
     isGroup: 0
     parentIndex: 0
-    spriteID: da23f1ecf71a7e045b7ce38a772a9e6d
+    spriteID: a0fcea938a6784144b2df40f510c9b92
     layerID: -911353822
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
@@ -255,9 +233,9 @@ ScriptedImporter:
     spriteName: back-arm
     isGroup: 0
     parentIndex: 0
-    spriteID: 06100c8b1fd52ac4b809771d7aafe207
+    spriteID: 959bae99bb5c12e46bc39c3ea6a2ceeb
     layerID: 1245723242
-    mosaicPosition: {x: 147, y: 379}
+    mosaicPosition: {x: 87, y: 305}
     flatten: 0
     isImported: 1
     isVisible: 1

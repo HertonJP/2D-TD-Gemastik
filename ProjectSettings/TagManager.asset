@@ -12,7 +12,7 @@ TagManager:
   - Enemies
   - Water
   - UI
-  - 
+  - Heroes
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: Hills
     uniqueID: 158440749
+    locked: 0
+  - name: Heroes
+    uniqueID: 1565642321
     locked: 0

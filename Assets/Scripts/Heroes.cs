@@ -19,8 +19,34 @@ public class Heroes : MonoBehaviour
             FindTarget();
             return;
         }
+        
+        if (!inRange())
+        {
+            target = null;
+        }
+        CheckEnemyPassed();
+    }
 
-        RotateTowardsTarget();
+
+    private void CheckEnemyPassed()
+    {
+        Vector2 direction = target.position - transform.position;
+        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, direction, targetingRange, enemyMask);
+
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit.transform != target)
+            {
+                // Flip the sprite horizontally
+                SpriteRenderer spriteRenderer = rotationPoint.GetComponent<SpriteRenderer>();
+                spriteRenderer.flipX = direction.x < 0;
+                break;
+            }
+        }
+    }
+    private bool inRange()
+    {
+        return Vector2.Distance(target.position, transform.position) <= targetingRange;
     }
 
     private void FindTarget()
@@ -32,13 +58,7 @@ public class Heroes : MonoBehaviour
         }
     }
 
-    private void RotateTowardsTarget()
-    {
-        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
-
-        Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-        rotationPoint.rotation = targetRotation;
-    }
+    
     private void OnDrawGizmosSelected()
     {
         Handles.color = Color.cyan;

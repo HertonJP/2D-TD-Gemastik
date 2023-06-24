@@ -260,11 +260,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &138796331 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -471915417398499423, guid: 4ea13f8cd23621e4a88308da8ea07633, type: 3}
-  m_PrefabInstance: {fileID: 929680080}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &170060585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3751,11 +3746,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8736fe600d90b9a46adfb43caa5cfac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationPoint: {fileID: 138796331}
   enemyMask:
     serializedVersion: 2
     m_Bits: 8
+  bulletPrefab: {fileID: 0}
+  firingPoint: {fileID: 0}
   targetingRange: 3
+  attackSpeed: 1
+--- !u!61 &929680084
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929680081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.05306697, y: 0.83625627}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.6981359, y: 2.2789798}
+  m_EdgeRadius: 0
 --- !u!1 &1030119952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,6 +4334,32 @@ MonoBehaviour:
   waypoints: {fileID: 91889722}
   speed: 2
   distanceThreshold: 0.2
+--- !u!61 &1480396855
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480396852}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.024778605, y: 1.6151843}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8334813, y: 3.5125098}
+  m_EdgeRadius: 0
 --- !u!1 &1521142494
 GameObject:
   m_ObjectHideFlags: 0

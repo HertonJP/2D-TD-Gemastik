@@ -5,19 +5,17 @@ using UnityEditor;
 
 public class Heroes : MonoBehaviour
 {
-    [SerializeField] private Transform rotationPoint;
     [SerializeField] private LayerMask enemyMask;
-    [SerializeField] private GameObject heroObject;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform firingPoint;
 
     [SerializeField] private float targetingRange = 3f;
-    private SpriteRenderer heroSpriteRenderer;
+    [SerializeField] private float attackSpeed = 1f;
 
     private Transform target;
+    private float timeUntilFire;
 
-    private void Start()
-    {
-        heroSpriteRenderer = heroObject.GetComponent<SpriteRenderer>();
-    }
+
     private void Update()
     {
         if(target == null)
@@ -25,37 +23,27 @@ public class Heroes : MonoBehaviour
             FindTarget();
             return;
         }
-        
+
         if (!inRange())
         {
             target = null;
         }
-        CheckEnemyPassed();
+        else
+        {
+            timeUntilFire += Time.deltaTime;
+        }
+        if(timeUntilFire >= 1f / attackSpeed)
+        {
+            Attack();
+            timeUntilFire = 0f;
+        }
     }
 
-
-    private void CheckEnemyPassed()
+    private void Attack()
     {
-        Vector2 direction = target.position - transform.position;
-        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, direction, targetingRange, enemyMask);
-
-        bool enemyPassed = false;
-
-        foreach (RaycastHit2D hit in hits)
-        {
-            if (hit.transform != target)
-            {
-                enemyPassed = true;
-                break;
-            }
-        }
-
-        // Flip the sprite based on the enemy passing
-        if (enemyPassed)
-        {
-            heroSpriteRenderer.flipX = direction.x < 0;
-        }
+        Debug.Log("Attack");
     }
+
     private bool inRange()
     {
         return Vector2.Distance(target.position, transform.position) <= targetingRange;

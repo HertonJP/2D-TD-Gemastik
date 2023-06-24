@@ -6,7 +6,7 @@ using UnityEditor;
 public class Heroes : MonoBehaviour
 {
     [SerializeField] private LayerMask enemyMask;
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private GameObject projectilesPrefab;
     [SerializeField] private Transform firingPoint;
 
     [SerializeField] private float targetingRange = 3f;
@@ -41,6 +41,9 @@ public class Heroes : MonoBehaviour
 
     private void Attack()
     {
+        GameObject projectilesObj = Instantiate(projectilesPrefab, firingPoint.position, Quaternion.identity);
+        Projectiles projectilesScript = projectilesObj.GetComponent<Projectiles>();
+        projectilesScript.SetTarget(target);
         Debug.Log("Attack");
     }
 

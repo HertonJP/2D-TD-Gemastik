@@ -13,7 +13,7 @@ TagManager:
   - Water
   - UI
   - Heroes
-  - 
+  - Projectiles
   - 
   - 
   - 
@@ -47,6 +47,9 @@ TagManager:
     locked: 0
   - name: Hills
     uniqueID: 158440749
+    locked: 0
+  - name: Projectiles
+    uniqueID: 2727396337
     locked: 0
   - name: Heroes
     uniqueID: 1565642321

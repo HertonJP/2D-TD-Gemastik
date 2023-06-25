@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level 1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 1d72b5bfe85f96c4e93ed7621b10e518
+  - enabled: 1
+    path: Assets/Scenes/Level 1 Tilemap.unity
+    guid: 07ab4f229ab87074fa22186222460d28
+  - enabled: 1
+    path: Assets/Scenes/Level 2 Tilemap.unity
+    guid: e1c5c8f7a20b95642b17ed3ced233abc
+  - enabled: 1
+    path: Assets/Scenes/Level 3 Tilemap.unity
+    guid: ff17a1be49dc3154089eebfba2a40a6e
   m_configObjects: {}

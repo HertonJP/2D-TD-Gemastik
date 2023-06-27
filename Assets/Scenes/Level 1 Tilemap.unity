@@ -4649,6 +4649,7 @@ GameObject:
   - component: {fileID: 1574393767}
   - component: {fileID: 1574393769}
   - component: {fileID: 1574393768}
+  - component: {fileID: 1574393770}
   m_Layer: 0
   m_Name: Highground
   m_TagString: Untagged
@@ -6934,6 +6935,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1574393770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574393766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4e20289bb1c2045a54c0e9991d3207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1574393769}
+  highlightTile: {fileID: 0}
 --- !u!1 &1629877437
 GameObject:
   m_ObjectHideFlags: 0

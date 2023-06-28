@@ -505,6 +505,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3619080384662037024, guid: be719974e96b0044bad386a0c120e802, type: 3}
   m_PrefabInstance: {fileID: 1539410297}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &102285987 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3332731794009087071, guid: be719974e96b0044bad386a0c120e802, type: 3}
+  m_PrefabInstance: {fileID: 1539410297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &145899850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,6 +1593,7 @@ MonoBehaviour:
   waypoints: {fileID: 91889722}
   speed: 2
   distanceThreshold: 0.1
+  rb: {fileID: 452229738}
 --- !u!114 &452229733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5220,6 +5226,10 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3619080384662037025, guid: be719974e96b0044bad386a0c120e802, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 102285987}
+    - target: {fileID: 3619080384662037025, guid: be719974e96b0044bad386a0c120e802, type: 3}
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
@@ -5271,7 +5281,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7539884407662370131, guid: be719974e96b0044bad386a0c120e802, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 102285992, guid: be719974e96b0044bad386a0c120e802, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: be719974e96b0044bad386a0c120e802, type: 3}
 --- !u!4 &1574393767 stripped
 Transform:

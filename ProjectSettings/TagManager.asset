@@ -14,7 +14,7 @@ TagManager:
   - UI
   - Heroes
   - Projectiles
-  - 
+  - Hero Tiles
   - 
   - 
   - 
@@ -47,6 +47,9 @@ TagManager:
     locked: 0
   - name: Hills
     uniqueID: 158440749
+    locked: 0
+  - name: Hero Tiles
+    uniqueID: 2025830509
     locked: 0
   - name: Projectiles
     uniqueID: 2727396337

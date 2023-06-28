@@ -318,8 +318,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CELLS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
+  m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -451,10 +451,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jenis sel darah putih yang memiliki kemampuan untuk menelan dan mencerna
-    mikroorganisme, termasuk bakteri TBC. \n\nMereka bekerja dengan cara memerangkap
-    dan mencerna bakteri di sekitar area mereka, sehingga memiliki serangan area
-    efektif."
+  m_text: "Jenis bakteri patogen yang menyebabkan penyakit tuberkulosis (TBC). \n\nBakteri
+    ini menyerang paru-paru dan dapat menyebabkan kerusakan pada jaringan paru-paru
+    serta gejala seperti batuk, demam, dan kelelahan."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -956,7 +955,7 @@ GameObject:
   - component: {fileID: 225750106}
   - component: {fileID: 225750105}
   m_Layer: 5
-  m_Name: Macrophage Panel (1)
+  m_Name: Myco (range) Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1215,7 +1214,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dendritic Cell
+  m_text: Multi-Drug Resistant tuberculosis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -1242,8 +1241,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2871,7 +2870,7 @@ GameObject:
   - component: {fileID: 620850595}
   - component: {fileID: 620850594}
   m_Layer: 5
-  m_Name: Natural Killer Panel (1)
+  m_Name: XDR Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3556,8 +3555,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -70.020004}
-  m_SizeDelta: {x: 285.5715, y: 181.84}
+  m_AnchoredPosition: {x: 0, y: -115.343}
+  m_SizeDelta: {x: 285.5715, y: 91.194}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &774796873
 MonoBehaviour:
@@ -3579,10 +3578,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Merupakan jenis sel darah putih yang berperan penting dalam mengaktifkan
-    dan mengkoordinasikan respons kekebalan tubuh. \n\nMereka mengambil bagian dari
-    patogen seperti bakteri TBC dan mengenalkannya kepada sel T lainnya, memicu respons
-    imun yang lebih luas."
+  m_text: Bentuk TBC yang telah mengembangkan resistensi terhadap beberapa obat yang
+    umumnya digunakan dalam pengobatan TBC.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -3806,7 +3803,7 @@ GameObject:
   - component: {fileID: 784571541}
   - component: {fileID: 784571540}
   m_Layer: 5
-  m_Name: Dendritic Panel (1)
+  m_Name: MDR Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4338,7 +4335,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: White Blood Cell
+  m_text: Latent tuberculosis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -5102,8 +5099,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -70.020004}
-  m_SizeDelta: {x: 285.5715, y: 181.84}
+  m_AnchoredPosition: {x: 0, y: -92.96127}
+  m_SizeDelta: {x: 285.5715, y: 135.9575}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1063356009
 MonoBehaviour:
@@ -5125,9 +5122,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Komponen penting dalam sistem kekebalan tubuh yang bertanggung jawab untuk
-    melawan infeksi dan penyakit. \n\nMereka dapat menyerang langsung mikroorganisme
-    patogen, termasuk bakteri yang menyebabkan tuberkulosis."
+  m_text: Sebuah keadaan di mana seseorang terinfeksi Mycobacterium tuberculosis
+    tetapi tidak menunjukkan gejala penyakit atau tidak menularkan infeksi kepada
+    orang lain.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -5262,9 +5259,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jenis sel darah putih yang memiliki kemampuan untuk mengenali dan membunuh
-    sel-sel yang terinfeksi oleh bakteri atau virus. \n\nMereka memiliki mekanisme
-    untuk menghancurkan sel-sel yang terinfeksi tuberkulosis secara langsung."
+  m_text: "Jenis bakteri patogen yang menyebabkan penyakit tuberkulosis (TBC). \n\nBakteri
+    ini menyerang paru-paru dan dapat menyebabkan kerusakan pada jaringan paru-paru
+    serta gejala seperti batuk, demam, dan kelelahan."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -5714,8 +5711,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -70.020004}
-  m_SizeDelta: {x: 285.5715, y: 181.84}
+  m_AnchoredPosition: {x: 0, y: -113.664375}
+  m_SizeDelta: {x: 285.5715, y: 94.5512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1428076407
 MonoBehaviour:
@@ -5737,10 +5734,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jenis sel darah putih yang dapat mengenali dan menghancurkan sel-sel yang
-    terinfeksi virus atau tumor. \n\nMeskipun mereka lebih umum terkait dengan respons
-    terhadap sel-sel kanker, mereka juga dapat memiliki peran dalam melawan infeksi
-    bakteri, termasuk TBC."
+  m_text: 'Bentuk TBC yang menunjukkan tingkat resistensi yang tinggi terhadap berbagai
+    jenis obat yang digunakan dalam pengobatan TBC. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -6264,7 +6259,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Macrophage Cell
+  m_text: Mycobacterium tuberculosis (range)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -6291,8 +6286,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7117,7 +7112,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Natural Killer Cell
+  m_text: Extensively Drug Resistant tuberculosis
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -7144,8 +7139,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.4
-  m_fontSizeBase: 37.4
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7463,7 +7458,7 @@ GameObject:
   - component: {fileID: 1818447088}
   - component: {fileID: 1818447087}
   m_Layer: 5
-  m_Name: White Blood Panel (1)
+  m_Name: Latent Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7790,7 +7785,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Killer T Cell
+  m_text: Mycobacterium tuberculosis (melee)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -7817,8 +7812,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8197,8 +8192,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: TUBERCULOSIS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
+  m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -32,8 +32,8 @@ public class Plot : MonoBehaviour
         {
             return;
         }
-        hero = BuildManager.main.GetSelectedHero();
-        Instantiate(hero, transform.position, Quaternion.identity);
+        HeroTiles heroToSpawn = BuildManager.main.GetSelectedHero();
+        hero = Instantiate(heroToSpawn.prefab, transform.position, Quaternion.identity);
     }
 
 

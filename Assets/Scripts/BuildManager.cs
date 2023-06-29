@@ -6,7 +6,7 @@ public class BuildManager : MonoBehaviour
 {
     public static BuildManager main;
 
-    [SerializeField] private GameObject[] heroPrefabs;
+    [SerializeField] private HeroTiles[] heroes;
 
     private int selectedHero = 0;
 
@@ -16,8 +16,8 @@ public class BuildManager : MonoBehaviour
         main = this;
     }
 
-    public GameObject GetSelectedHero()
+    public HeroTiles GetSelectedHero()
     {
-        return heroPrefabs[selectedHero];
+        return heroes[selectedHero];
     }
 }

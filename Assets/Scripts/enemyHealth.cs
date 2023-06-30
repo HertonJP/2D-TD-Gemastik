@@ -5,6 +5,8 @@ using UnityEngine;
 public class enemyHealth : MonoBehaviour
 {
     [SerializeField] private int HP = 2;
+    [SerializeField] private int worth = 20;
+    
 
 
     private bool isDestroyed = false;
@@ -14,6 +16,7 @@ public class enemyHealth : MonoBehaviour
         if(HP <= 0 && !isDestroyed)
         {
             Spawner.onEnemyDestroy.Invoke();
+            Currency.main.IncreaseCurrency(worth);
             isDestroyed = true;
             Destroy(gameObject);
         }

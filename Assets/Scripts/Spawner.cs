@@ -25,15 +25,18 @@ public class Spawner : MonoBehaviour
     {
         onEnemyDestroy.AddListener(enemyDestroyed);
     }
+
     private void enemyDestroyed()
     {
         Debug.Log("enemy berkurang");
         enemiesAlive--;
     }
+
     private void Start()
     {
         StartWave();
     }
+
     private void Update()
     {
         if (!isSpawning) return;
@@ -50,12 +53,37 @@ public class Spawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        GameObject prefabToSpawn = enemyPrefabs[0];
+        GameObject prefabToSpawn = GetRandomEnemyPrefab();
+        if (prefabToSpawn == null)
+        {
+            Debug.LogWarning("No valid enemy prefab available for spawning.");
+            return;
+        }
+
         Transform nextWaypoint = waypoints.GetNextWaypoint(null);
         Vector3 spawnPosition = nextWaypoint.position;
-        Instantiate(prefabToSpawn, spawnPosition , Quaternion.identity);
-
+        Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
     }
+
+    private GameObject GetRandomEnemyPrefab()
+    {
+        List<GameObject> validPrefabs = new List<GameObject>();
+        foreach (GameObject prefab in enemyPrefabs)
+        {
+            if (prefab != null && !prefab.CompareTag("Manager"))
+            {
+                validPrefabs.Add(prefab);
+            }
+        }
+
+        if (validPrefabs.Count > 0)
+        {
+            return validPrefabs[Random.Range(0, validPrefabs.Count)];
+        }
+
+        return null; // No valid enemy prefabs available
+    }
+
     private void StartWave()
     {
         isSpawning = true;
@@ -64,6 +92,6 @@ public class Spawner : MonoBehaviour
 
     private int EnemiesPerWave()
     {
-        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, 0.75f));
+        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultyScalingFactor));
     }
 }

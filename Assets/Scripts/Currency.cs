@@ -4,24 +4,29 @@ using UnityEngine;
 
 public class Currency : MonoBehaviour
 {
-    public int currency;
+    public static Currency main;
+    public int nutrition;
 
     private void Start()
     {
-        currency = 100;   
+        nutrition = 100;   
     }
 
+    private void Awake()
+    {
+        main = this;
+    }
     public void IncreaseCurrency(int amount)
     {
-        currency += amount;
+        nutrition += amount;
     }
 
     public bool SpendCurrency(int amount)
     {
-        if(amount <= currency)
+        if(amount <= nutrition)
         {
             Debug.Log("Beli item");
-            currency -= amount;
+            nutrition -= amount;
             return true;
         }
         else

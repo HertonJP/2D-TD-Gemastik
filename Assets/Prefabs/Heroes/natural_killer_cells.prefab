@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4993840306127964282}
   - component: {fileID: 7482712478751105124}
+  - component: {fileID: 1184742136}
   m_Layer: 0
   m_Name: natural_killer_cells
   m_TagString: Untagged
@@ -84,3 +85,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1184742136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168122359678345284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8736fe600d90b9a46adfb43caa5cfac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 8
+  projectilesPrefab: {fileID: 9195885523867978729, guid: f87e28e6c0a00d7428ef493c4d7fba68, type: 3}
+  firingPoint: {fileID: 4993840306127964282}
+  targetingRange: 4
+  attackSpeed: 2

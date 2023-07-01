@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3123589853258411729}
   - component: {fileID: 6382406103838577882}
+  - component: {fileID: 1924671422}
   m_Layer: 0
   m_Name: killer_t_cells
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 5509020817154227114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,3 +85,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1924671422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5509020817154227114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8736fe600d90b9a46adfb43caa5cfac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 8
+  projectilesPrefab: {fileID: 9195885523867978729, guid: f87e28e6c0a00d7428ef493c4d7fba68, type: 3}
+  firingPoint: {fileID: 3123589853258411729}
+  targetingRange: 3
+  attackSpeed: 2

@@ -33,6 +33,12 @@ public class Plot : MonoBehaviour
             return;
         }
         HeroTiles heroToSpawn = BuildManager.main.GetSelectedHero();
+        if(heroToSpawn.cost > Currency.main.nutrition)
+        {
+            Debug.Log("Not Enough Nutrition");
+            return;
+        }
+        Currency.main.SpendCurrency(heroToSpawn.cost);
         hero = Instantiate(heroToSpawn.prefab, transform.position, Quaternion.identity);
     }
 

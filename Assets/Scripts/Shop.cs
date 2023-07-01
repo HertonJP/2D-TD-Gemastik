@@ -8,6 +8,11 @@ public class Shop : MonoBehaviour
     [SerializeField] TextMeshProUGUI currencyUI;
     [SerializeField] private GameObject ShopPanel;
 
+
+    private void Start()
+    {
+        ShopPanel.SetActive(false);
+    }
     public void onClickPanel()
     {
         if(ShopPanel.activeSelf == true)
@@ -28,7 +33,7 @@ public class Shop : MonoBehaviour
 
     private void OnGUI()
     {
-        Currency.main.nutrition.ToString();
+       currencyUI.text = Currency.main.nutrition.ToString();
     }
 
     public void SetSelected()

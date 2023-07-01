@@ -103,4 +103,4 @@ MonoBehaviour:
   projectilesPrefab: {fileID: 9195885523867978729, guid: f87e28e6c0a00d7428ef493c4d7fba68, type: 3}
   firingPoint: {fileID: 1002932622469097329}
   targetingRange: 3
-  attackSpeed: 2
+  attackSpeed: 1

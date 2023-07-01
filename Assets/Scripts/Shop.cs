@@ -12,4 +12,9 @@ public class Shop : MonoBehaviour
     {
         Currency.main.nutrition.ToString();
     }
+
+    public void SetSelected()
+    {
+
+    }
 }

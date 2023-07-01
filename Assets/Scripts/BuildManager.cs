@@ -20,4 +20,9 @@ public class BuildManager : MonoBehaviour
     {
         return heroes[selectedHero];
     }
+
+    public void SetSelectedHero(int _selectedHero)
+    {
+        selectedHero = _selectedHero;
+    }
 }

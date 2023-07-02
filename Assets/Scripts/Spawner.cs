@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemyPrefabs;
-    [SerializeField] private Waypoints waypoints;
 
     [SerializeField] private int baseEnemies = 3;
     [SerializeField] private float enemiesPerSecond = 1f;
@@ -73,7 +72,7 @@ public class Spawner : MonoBehaviour
         
 
         
-        Instantiate(prefabToSpawn, waypoints.transform.GetChild(0).position, Quaternion.identity);
+        Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
     }
 
     

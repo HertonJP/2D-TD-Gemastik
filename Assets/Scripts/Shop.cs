@@ -33,7 +33,7 @@ public class Shop : MonoBehaviour
 
     private void OnGUI()
     {
-       currencyUI.text = Currency.main.nutrition.ToString();
+       currencyUI.text = LevelManager.main.nutrition.ToString();
     }
 
     public void SetSelected()

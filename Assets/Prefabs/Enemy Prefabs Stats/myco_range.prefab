@@ -101,7 +101,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 5484439045355195651}
   m_Bounds:
-    m_Center: {x: -0.09950441, y: -0.0025737882, z: 0}
+    m_Center: {x: -0.09951204, y: -0.002573073, z: 0}
     m_Extent: {x: 0.4280678, y: 0.5115192, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 4641703608377430418}
   m_Bounds:
-    m_Center: {x: -0.0005816668, y: -0.000000007450581, z: 0}
+    m_Center: {x: -0.0005892962, y: -0.000000007450581, z: 0}
     m_Extent: {x: 0.12441835, y: 0.110000014, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -520,7 +520,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.031373262, y: 0.533339}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -531,7 +531,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.0406018, y: 1.0332189}
   m_EdgeRadius: 0
 --- !u!212 &8394077315413129883
 SpriteRenderer:
@@ -632,7 +632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886c35a39ce4f604982466e987f93e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: {fileID: 0}
   speed: 2
   distanceThreshold: 0.2
   rb: {fileID: 8394077315413129881}

@@ -16,7 +16,7 @@ public class enemyHealth : MonoBehaviour
         if(HP <= 0 && !isDestroyed)
         {
             Spawner.onEnemyDestroy.Invoke();
-            Currency.main.IncreaseCurrency(worth);
+            LevelManager.main.IncreaseCurrency(worth);
             isDestroyed = true;
             Destroy(gameObject);
         }

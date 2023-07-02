@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1234534112733930133}
   - component: {fileID: 7539884407662370131}
   - component: {fileID: 3332731794009087071}
-  - component: {fileID: 102285992}
   m_Layer: 3
   m_Name: Enemy
   m_TagString: Untagged
@@ -102,8 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: {fileID: 0}
-  speed: 1
+  speed: 2
   distanceThreshold: 0.2
+  rb: {fileID: 3332731794009087071}
 --- !u!114 &1234534112733930133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 1
+  worth: 20
 --- !u!70 &7539884407662370131
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -154,16 +155,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &102285992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3619080384662037024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 501431882d5881544823a18fb2e8ce27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 2

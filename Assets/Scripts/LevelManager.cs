@@ -2,20 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Currency : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
-    public static Currency main;
-    public int nutrition;
+    public static LevelManager main;
 
-    private void Start()
-    {
-        nutrition = 100;   
-    }
+    public int nutrition;
+    public Transform startPoint;
+    public Transform[] path;
 
     private void Awake()
     {
         main = this;
     }
+
+    private void Start()
+    {
+        nutrition = 100;
+    }
+
     public void IncreaseCurrency(int amount)
     {
         nutrition += amount;
@@ -23,7 +27,7 @@ public class Currency : MonoBehaviour
 
     public bool SpendCurrency(int amount)
     {
-        if(amount <= nutrition)
+        if (amount <= nutrition)
         {
             Debug.Log("Beli item");
             nutrition -= amount;

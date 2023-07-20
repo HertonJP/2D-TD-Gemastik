@@ -5,7 +5,6 @@ using UnityEngine;
 public class AI : MonoBehaviour
 {
     [SerializeField] private float speed = 2f;
-    [SerializeField] private float distanceThreshold = 0.2f;
     [SerializeField] private Rigidbody2D rb;
 
     private Transform target;

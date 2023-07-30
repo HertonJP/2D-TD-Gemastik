@@ -5,13 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - End
+  - Manager
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemies
   - Water
   - UI
+  - Heroes
+  - Projectiles
+  - Hero Tiles
   - 
   - 
   - 
@@ -34,11 +38,23 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - HG
   m_SortingLayers:
-  - name: Default
+  - name: Ground
+    uniqueID: 2940728245
+    locked: 0
+  - name: Hills
+    uniqueID: 158440749
+    locked: 0
+  - name: Hero Tiles
+    uniqueID: 2025830509
+    locked: 0
+  - name: Projectiles
+    uniqueID: 2727396337
+    locked: 0
+  - name: Heroes
+    uniqueID: 1565642321
+    locked: 0
+  - name: Enemies
     uniqueID: 0
     locked: 0

@@ -4,32 +4,43 @@ using UnityEngine;
 
 public class AI : MonoBehaviour
 {
-    [SerializeField] private Waypoints waypoints;
     [SerializeField] private float speed = 2f;
-    [SerializeField] private float distanceThreshold = 0.2f;
-    private Transform currentWaypoint;
+    [SerializeField] private Rigidbody2D rb;
+
+    private Transform target;
+    private int pathIndex = 0;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
-        transform.position = currentWaypoint.position;
-
-        currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
+        target = LevelManager.main.path[pathIndex];
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, currentWaypoint.position, speed * Time.deltaTime);
-        if(Vector2.Distance(transform.position, currentWaypoint.position) <= distanceThreshold)
+        if(Vector2.Distance(target.position, transform.position) <= 0.1f)
         {
-            currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
+            pathIndex++;
 
-            if (currentWaypoint == waypoints.transform.GetChild(0))
+            if(pathIndex == LevelManager.main.path.Length)
             {
+                Spawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
+                return;
+            }
+            else
+            {
+                target = LevelManager.main.path[pathIndex];
             }
         }
+    }
+
+    private void FixedUpdate()
+    {
+        Vector2 direction = (target.position - transform.position).normalized;
+
+        rb.velocity = direction * speed;
     }
 }

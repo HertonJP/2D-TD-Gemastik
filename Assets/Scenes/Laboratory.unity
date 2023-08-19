@@ -451,9 +451,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jenis bakteri patogen yang menyebabkan penyakit tuberkulosis (TBC). \n\nBakteri
-    ini menyerang paru-paru dan dapat menyebabkan kerusakan pada jaringan paru-paru
-    serta gejala seperti batuk, demam, dan kelelahan."
+  m_text: 'The type of pathogenic bacteria that causes tuberculosis (TB).
+
+    
+
+    These
+    bacteria attack the lungs and can lead to damage to lung tissues, as well as
+    symptoms such as cough, fever, and fatigue.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -698,7 +702,7 @@ RectTransform:
   - {fileID: 2008856417}
   - {fileID: 1155355427}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -910,7 +914,7 @@ RectTransform:
   - {fileID: 42092290}
   - {fileID: 584657261}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -988,7 +992,7 @@ RectTransform:
   - {fileID: 1572883103}
   - {fileID: 8493192}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1336,11 +1340,11 @@ RectTransform:
   m_Children:
   - {fileID: 603941716}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -446, y: 239}
+  m_AnchoredPosition: {x: -360.6, y: 137.00003}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &289573058
@@ -1419,8 +1423,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: e1d5fa0c447f0774691bc9dcb92d3d56, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1875,7 +1879,7 @@ RectTransform:
   - {fileID: 2075971740}
   - {fileID: 1397357261}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1953,7 +1957,7 @@ RectTransform:
   - {fileID: 348080370}
   - {fileID: 863204820}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2034,7 +2038,7 @@ RectTransform:
   - {fileID: 1034785353}
   - {fileID: 2111432747}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2634,7 +2638,7 @@ RectTransform:
   - {fileID: 831942901}
   - {fileID: 1525653645}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2871,9 +2875,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jenis sel darah putih yang memproduksi antibodi sebagai bagian dari respons
-    kekebalan humoral. \n\nMereka dapat mengenali dan menyerang bakteri TBC dengan
-    menghasilkan antibodi yang menargetkan dan merusak bakteri tersebut."
+  m_text: 'A type of white blood cell that produces antibodies as part of the humoral
+    immune response.
+
+    
+
+    They can recognize and target TB bacteria by generating
+    antibodies that specifically aim to disrupt these bacteria.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -3010,8 +3018,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
+  m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3035,8 +3043,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 29
+  m_fontSizeBase: 29
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3045,7 +3053,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: 18.3
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -3118,7 +3126,7 @@ RectTransform:
   - {fileID: 1060626383}
   - {fileID: 1595002817}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3196,7 +3204,7 @@ RectTransform:
   - {fileID: 1760101428}
   - {fileID: 1428076406}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3474,7 +3482,7 @@ RectTransform:
   - {fileID: 1661760399}
   - {fileID: 575498833}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3992,8 +4000,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bentuk TBC yang telah mengembangkan resistensi terhadap beberapa obat yang
-    umumnya digunakan dalam pengobatan TBC.
+  m_text: "A specific variant of tuberculosis in which the causative bacteria have
+    acquired resistance to at least two of the most effective first-line anti-TB
+    drugs, namely isoniazid and rifampicin. \n\nThis resistance arises due to inadequate
+    treatment adherence, incorrect drug regimens, or other factors, resulting in
+    the bacteria's ability to evade the drugs' intended actions. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -4238,7 +4249,7 @@ RectTransform:
   - {fileID: 246143465}
   - {fileID: 774796872}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4476,10 +4487,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jenis sel darah putih yang \"mengingat\" patogen yang pernah mereka hadapi
-    sebelumnya. \n\nMereka memiliki peran penting dalam respons imun jangka panjang
-    dan dapat memberikan perlindungan yang lebih cepat dan kuat jika infeksi yang
-    sama terjadi kembali."
+  m_text: 'A type of white blood cell that ''remembers'' pathogens they''ve encountered
+    before.
+
+    
+
+    They play a crucial role in long-term immune responses and
+    can provide quicker and stronger protection if the same infection occurs again.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -4884,10 +4898,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Merupakan jenis sel darah putih yang berperan penting dalam mengaktifkan
-    dan mengkoordinasikan respons kekebalan tubuh. \n\nMereka mengambil bagian dari
-    patogen seperti bakteri TBC dan mengenalkannya kepada sel T lainnya, memicu respons
-    imun yang lebih luas."
+  m_text: 'This is a type of white blood cell that plays a crucial role in activating
+    and coordinating the immune response.
+
+    
+
+    They take part in capturing
+    pathogens such as TB bacteria and presenting them to other T cells, triggering
+    a broader immune response.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -5132,7 +5150,7 @@ RectTransform:
   m_Children:
   - {fileID: 2076020685}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5232,6 +5250,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980108705}
+  m_CullTransparentMesh: 1
+--- !u!1 &1001340318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1001340319}
+  - component: {fileID: 1001340321}
+  - component: {fileID: 1001340320}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1001340319
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001340318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1498555524}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -12.3072, y: -15.0791}
+  m_SizeDelta: {x: 905.8144, y: 417.7582}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1001340320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001340318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c34656e310ad99740928e01930aec427, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1001340321
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001340318}
   m_CullTransparentMesh: 1
 --- !u!1 &1034785352
 GameObject:
@@ -5560,9 +5654,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sebuah keadaan di mana seseorang terinfeksi Mycobacterium tuberculosis
-    tetapi tidak menunjukkan gejala penyakit atau tidak menularkan infeksi kepada
-    orang lain.
+  m_text: A condition in which an individual is infected with Mycobacterium tuberculosis
+    but does not show symptoms of the disease or transmit the infection to others.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -5697,9 +5790,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jenis bakteri patogen yang menyebabkan penyakit tuberkulosis (TBC). \n\nBakteri
-    ini menyerang paru-paru dan dapat menyebabkan kerusakan pada jaringan paru-paru
-    serta gejala seperti batuk, demam, dan kelelahan."
+  m_text: 'The type of pathogenic bacteria that causes tuberculosis (TB).
+
+    
+
+    These
+    bacteria attack the lungs and can lead to damage to lung tissue, as well as symptoms
+    such as coughing, fever, and fatigue.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -5809,7 +5906,7 @@ RectTransform:
   - {fileID: 1865205915}
   - {fileID: 825370920}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5887,7 +5984,7 @@ RectTransform:
   m_Children:
   - {fileID: 8104017}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6046,10 +6143,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jenis sel darah putih yang memiliki kemampuan untuk menelan dan mencerna
-    mikroorganisme, termasuk bakteri TBC. \n\nMereka bekerja dengan cara memerangkap
-    dan mencerna bakteri di sekitar area mereka, sehingga memiliki serangan area
-    efektif."
+  m_text: 'A type of white blood cell that has the ability to engulf and digest microorganisms,
+    including TB bacteria.
+
+    
+
+    They work by trapping and digesting bacteria
+    around their vicinity, thus having an effective area of attack.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -6184,8 +6284,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Bentuk TBC yang menunjukkan tingkat resistensi yang tinggi terhadap berbagai
-    jenis obat yang digunakan dalam pengobatan TBC. '
+  m_text: 'A particularly severe and concerning variant of tuberculosis.
+
+
+    This
+    high level of resistance arises due to a combination of factors, such as improper
+    treatment, inadequate healthcare access, and the improper use of antibiotics.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -6489,6 +6593,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1001340319}
   - {fileID: 1220934396}
   - {fileID: 980108706}
   - {fileID: 680620506}
@@ -6572,10 +6677,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jenis sel darah putih yang dapat mengenali dan menghancurkan sel-sel yang
-    terinfeksi virus atau tumor. \n\nMeskipun mereka lebih umum terkait dengan respons
-    terhadap sel-sel kanker, mereka juga dapat memiliki peran dalam melawan infeksi
-    bakteri, termasuk TBC."
+  m_text: 'A type of white blood cell that can identify and destroy cells infected
+    by viruses or tumors.
+
+    
+
+    Although they are more commonly associated
+    with responses to cancer cells, they can also play a role in fighting bacterial
+    infections, including TB.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -6845,9 +6954,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Komponen penting dalam sistem kekebalan tubuh yang bertanggung jawab untuk
-    melawan infeksi dan penyakit. \n\nMereka dapat menyerang langsung mikroorganisme
-    patogen, termasuk bakteri yang menyebabkan tuberkulosis."
+  m_text: 'Important components within the immune system that are responsible for
+    fighting infections and diseases.
+
+    
+
+    They can directly target pathogenic
+    microorganisms, including the bacteria that cause tuberculosis.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -7372,7 +7485,7 @@ RectTransform:
   - {fileID: 2074939667}
   - {fileID: 1739462834}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7475,9 +7588,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jenis sel darah putih yang memiliki kemampuan untuk mengenali dan membunuh
-    sel-sel yang terinfeksi oleh bakteri atau virus. \n\nMereka memiliki mekanisme
-    untuk menghancurkan sel-sel yang terinfeksi tuberkulosis secara langsung."
+  m_text: 'A type of white blood cell that has the ability to recognize and eliminate
+    cells infected by bacteria or viruses.
+
+    
+
+    They possess mechanisms to
+    directly destroy cells infected with tuberculosis.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
   m_sharedMaterial: {fileID: 595350089505455896, guid: cc6b767f33c0a7743aa464ba613bcabe, type: 2}
@@ -7991,7 +8108,7 @@ RectTransform:
   - {fileID: 858285229}
   - {fileID: 1063356008}
   m_Father: {fileID: 1498555524}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

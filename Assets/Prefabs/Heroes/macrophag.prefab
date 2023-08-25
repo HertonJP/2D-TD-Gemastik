@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3058498308516179598}
   - component: {fileID: 8079487498991229843}
   - component: {fileID: 759031470}
+  - component: {fileID: 2285040309283291760}
   m_Layer: 0
   m_Name: macrophag
   m_TagString: Untagged
@@ -72,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1565642321
-  m_SortingLayer: 4
+  m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4589441737d8b0a4f869e1048b5d97e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42b2c0ff6674e2446951eda9862d4a04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,3 +105,24 @@ MonoBehaviour:
   firingPoint: {fileID: 3058498308516179598}
   targetingRange: 1
   attackSpeed: 1.5
+--- !u!95 &2285040309283291760
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227238762396973639}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb3117841fc708b44be5dbbdc0622953, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

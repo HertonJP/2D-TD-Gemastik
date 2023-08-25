@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3123589853258411729}
   - component: {fileID: 6382406103838577882}
   - component: {fileID: 1924671422}
+  - component: {fileID: 3032508906776325208}
   m_Layer: 0
   m_Name: killer_t_cells
   m_TagString: Untagged
@@ -72,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1565642321
-  m_SortingLayer: 4
+  m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eeb300e8edc3e1b448da32000992e3c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d470659701ab3f4b9b28e5bc8c68b55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,3 +105,24 @@ MonoBehaviour:
   firingPoint: {fileID: 3123589853258411729}
   targetingRange: 3
   attackSpeed: 2
+--- !u!95 &3032508906776325208
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5509020817154227114}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4524a5845b79c2c47b30c76a8766c8cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

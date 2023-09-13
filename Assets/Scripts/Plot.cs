@@ -39,7 +39,8 @@ public class Plot : MonoBehaviour
             return;
         }
         LevelManager.main.SpendCurrency(heroToSpawn.cost);
-        hero = Instantiate(heroToSpawn.prefab, transform.position, Quaternion.identity);
+        Vector3 spawnPosition = transform.position + new Vector3(0, 0.5f, 0);
+        hero = Instantiate(heroToSpawn.prefab, spawnPosition, Quaternion.identity);
     }
 
 

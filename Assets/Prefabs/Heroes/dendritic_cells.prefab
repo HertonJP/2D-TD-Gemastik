@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7510883333578079162}
   - component: {fileID: 6379178227943574799}
   - component: {fileID: 617780295}
+  - component: {fileID: 5805087658252618779}
   m_Layer: 0
   m_Name: dendritic_cells
   m_TagString: Untagged
@@ -72,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1565642321
-  m_SortingLayer: 4
+  m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2e969feccd844ca469832cbf5d7aac5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95c11244c3579f0498143ad7690b632d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,3 +105,24 @@ MonoBehaviour:
   firingPoint: {fileID: 7510883333578079162}
   targetingRange: 3
   attackSpeed: 2
+--- !u!95 &5805087658252618779
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3702947525251399006}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d245dbb959d6804c98634b708261725, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

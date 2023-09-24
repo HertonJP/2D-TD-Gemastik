@@ -18,7 +18,11 @@ public class Plot : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        sr.color = hoverColor;
+        if(Time.timeScale != 0)
+        {
+            sr.color = hoverColor;
+        }
+        
     }
 
     private void OnMouseExit()
@@ -28,19 +32,23 @@ public class Plot : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(hero != null)
+        if(Time.timeScale != 0)
         {
-            return;
+            if (hero != null)
+            {
+                return;
+            }
+            HeroTiles heroToSpawn = BuildManager.main.GetSelectedHero();
+            if (heroToSpawn.cost > LevelManager.main.nutrition)
+            {
+                Debug.Log("Not Enough Nutrition");
+                return;
+            }
+            LevelManager.main.SpendCurrency(heroToSpawn.cost);
+            Vector3 spawnPosition = transform.position + new Vector3(0, 0.5f, 0);
+            hero = Instantiate(heroToSpawn.prefab, spawnPosition, Quaternion.identity);
         }
-        HeroTiles heroToSpawn = BuildManager.main.GetSelectedHero();
-        if(heroToSpawn.cost > LevelManager.main.nutrition)
-        {
-            Debug.Log("Not Enough Nutrition");
-            return;
-        }
-        LevelManager.main.SpendCurrency(heroToSpawn.cost);
-        Vector3 spawnPosition = transform.position + new Vector3(0, 0.5f, 0);
-        hero = Instantiate(heroToSpawn.prefab, spawnPosition, Quaternion.identity);
+        
     }
 
 

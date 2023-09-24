@@ -15,6 +15,7 @@ public class Shop : MonoBehaviour
     }
     public void onClickPanel()
     {
+        Time.timeScale = 0f;
         if (ShopPanel.activeSelf == true)
         {
             ShopPanel.SetActive(false);
@@ -27,6 +28,7 @@ public class Shop : MonoBehaviour
 
     public void closePanel()
     {
+        Time.timeScale = 1f;
         ShopPanel.SetActive(false);
     }
 

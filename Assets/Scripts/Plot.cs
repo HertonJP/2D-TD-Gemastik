@@ -10,6 +10,7 @@ public class Plot : MonoBehaviour
 
     private GameObject hero;
     private Color startColor;
+    private bool isFull = false;
 
     private void Start()
     {
@@ -18,7 +19,7 @@ public class Plot : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if(Time.timeScale != 0)
+        if (Time.timeScale != 0 && !isFull)
         {
             sr.color = hoverColor;
         }
@@ -47,6 +48,7 @@ public class Plot : MonoBehaviour
             LevelManager.main.SpendCurrency(heroToSpawn.cost);
             Vector3 spawnPosition = transform.position + new Vector3(0, 0.5f, 0);
             hero = Instantiate(heroToSpawn.prefab, spawnPosition, Quaternion.identity);
+            isFull = true;
         }
         
     }

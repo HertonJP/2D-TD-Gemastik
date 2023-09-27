@@ -4,8 +4,34 @@ using UnityEngine;
 
 public class HeroHover : MonoBehaviour
 {
+    private static HeroHover instance;
 
     private SpriteRenderer spriteRenderer;
+
+    public static HeroHover Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<HeroHover>();
+            }
+            return instance;
+        }
+    }
+
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
+        instance = this;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     private void Update()
     {

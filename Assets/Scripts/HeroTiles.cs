@@ -4,6 +4,7 @@ using UnityEngine;
 [Serializable]
 public class HeroTiles
 {
+    public HeroSprites heroSprites;
     public string name;
     public int cost;
     public GameObject prefab;

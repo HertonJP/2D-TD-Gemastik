@@ -503,6 +503,7 @@ GameObject:
   - component: {fileID: 92428406}
   - component: {fileID: 92428405}
   - component: {fileID: 92428404}
+  - component: {fileID: 92428407}
   m_Layer: 5
   m_Name: Macrophag Button
   m_TagString: Untagged
@@ -637,6 +638,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92428402}
   m_CullTransparentMesh: 1
+--- !u!114 &92428407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92428402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9fb7a2ed8dd2649808a50f4c3cf0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 4589441737d8b0a4f869e1048b5d97e1, type: 3}
 --- !u!1 &120360028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,26 +1870,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c9cf78b427d2741a6611f1a9d10206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heroHover: {fileID: 1402288166}
   heroes:
-  - name: White Blood Cells
+  - heroSprites: {fileID: 1040113280}
+    name: White Blood Cells
     cost: 1
     prefab: {fileID: 3152475369611100103, guid: dfe943f4d248e704f9fbc21d208e288d, type: 3}
-  - name: Killer T
+  - heroSprites: {fileID: 1555179913}
+    name: Killer T
     cost: 1
     prefab: {fileID: 5509020817154227114, guid: 778c20fd80f7e984a9e1000d6ed416c3, type: 3}
-  - name: Macrophage
+  - heroSprites: {fileID: 92428407}
+    name: Macrophage
     cost: 2
     prefab: {fileID: 227238762396973639, guid: 15acf1610a15cf54588377e45aa07033, type: 3}
-  - name: Dendritic
+  - heroSprites: {fileID: 2061737876}
+    name: Dendritic
     cost: 2
     prefab: {fileID: 3702947525251399006, guid: 5b8cfa1f5f2cf83468177bee5f0b7f6f, type: 3}
-  - name: Natural Killer
+  - heroSprites: {fileID: 880029177}
+    name: Natural Killer
     cost: 3
     prefab: {fileID: 1168122359678345284, guid: eed597985adfc7d4c9b4fe46be9c6ab9, type: 3}
-  - name: B Cell
+  - heroSprites: {fileID: 1932544649}
+    name: B Cell
     cost: 3
     prefab: {fileID: 3831405664972779935, guid: 20b2fa4fd24dc05459333932fc8a8884, type: 3}
-  - name: Memory Cell
+  - heroSprites: {fileID: 535166341}
+    name: Memory Cell
     cost: 3
     prefab: {fileID: 7448749264139167971, guid: 570dc5fabec36d14186e4331068a60a2, type: 3}
 --- !u!70 &452229737
@@ -2170,6 +2192,7 @@ GameObject:
   - component: {fileID: 535166340}
   - component: {fileID: 535166339}
   - component: {fileID: 535166338}
+  - component: {fileID: 535166341}
   m_Layer: 5
   m_Name: Memory Button
   m_TagString: Untagged
@@ -2304,6 +2327,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535166336}
   m_CullTransparentMesh: 1
+--- !u!114 &535166341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535166336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9fb7a2ed8dd2649808a50f4c3cf0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: a51b6b98e901da24380dc61451935977, type: 3}
 --- !u!1 &541305959
 GameObject:
   m_ObjectHideFlags: 0
@@ -3632,6 +3668,7 @@ GameObject:
   - component: {fileID: 880029176}
   - component: {fileID: 880029175}
   - component: {fileID: 880029174}
+  - component: {fileID: 880029177}
   m_Layer: 5
   m_Name: Natural Killer Button
   m_TagString: Untagged
@@ -3766,6 +3803,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880029172}
   m_CullTransparentMesh: 1
+--- !u!114 &880029177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880029172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9fb7a2ed8dd2649808a50f4c3cf0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 04c48a6c7b593d34589b117143f959ce, type: 3}
 --- !u!1 &892926454
 GameObject:
   m_ObjectHideFlags: 0
@@ -4243,6 +4293,7 @@ GameObject:
   - component: {fileID: 1040113279}
   - component: {fileID: 1040113278}
   - component: {fileID: 1040113277}
+  - component: {fileID: 1040113280}
   m_Layer: 5
   m_Name: White Blood Button
   m_TagString: Untagged
@@ -4377,6 +4428,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040113275}
   m_CullTransparentMesh: 1
+--- !u!114 &1040113280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040113275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9fb7a2ed8dd2649808a50f4c3cf0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 526ab91a5e7dd574696a3bb397385085, type: 3}
 --- !u!1 &1055346795
 GameObject:
   m_ObjectHideFlags: 0
@@ -6163,6 +6227,7 @@ GameObject:
   - component: {fileID: 1555179912}
   - component: {fileID: 1555179911}
   - component: {fileID: 1555179910}
+  - component: {fileID: 1555179913}
   m_Layer: 5
   m_Name: Killer T Button
   m_TagString: Untagged
@@ -6297,6 +6362,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555179908}
   m_CullTransparentMesh: 1
+--- !u!114 &1555179913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555179908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9fb7a2ed8dd2649808a50f4c3cf0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: eeb300e8edc3e1b448da32000992e3c7, type: 3}
 --- !u!1 &1565157874
 GameObject:
   m_ObjectHideFlags: 0
@@ -7276,6 +7354,7 @@ GameObject:
   - component: {fileID: 1932544648}
   - component: {fileID: 1932544647}
   - component: {fileID: 1932544646}
+  - component: {fileID: 1932544649}
   m_Layer: 5
   m_Name: B Button
   m_TagString: Untagged
@@ -7410,6 +7489,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932544644}
   m_CullTransparentMesh: 1
+--- !u!114 &1932544649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932544644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9fb7a2ed8dd2649808a50f4c3cf0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 44c8f31a8c1137340801edc0e280fc5d, type: 3}
 --- !u!1 &1974722471
 GameObject:
   m_ObjectHideFlags: 0
@@ -7897,6 +7989,7 @@ GameObject:
   - component: {fileID: 2061737875}
   - component: {fileID: 2061737874}
   - component: {fileID: 2061737873}
+  - component: {fileID: 2061737876}
   m_Layer: 5
   m_Name: Dendritic Button
   m_TagString: Untagged
@@ -8031,6 +8124,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061737871}
   m_CullTransparentMesh: 1
+--- !u!114 &2061737876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061737871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9fb7a2ed8dd2649808a50f4c3cf0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 2e969feccd844ca469832cbf5d7aac5e, type: 3}
 --- !u!1001 &2078645962
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -51,6 +51,7 @@ public class Plot : MonoBehaviour
             isFull = true;
 
             BuildManager.main.ResetSelectedHero();
+            HeroHover.Instance.Activate(null);
         }
     }
 

@@ -15,9 +15,11 @@ public class Heroes : MonoBehaviour
     [SerializeField] private int mana;
     private Transform target;
     private float timeUntilFire;
+    private Animator anim;
 
     private void Start()
     {
+        anim = gameObject.GetComponent<Animator>();
         mana = 0;
     }
     private void Update()
@@ -49,6 +51,7 @@ public class Heroes : MonoBehaviour
 
     private void Attack()
     {
+        anim.SetTrigger("isAttack");
         GameObject projectilesObj = Instantiate(projectilesPrefab, firingPoint.position, Quaternion.identity);
         Projectiles projectilesScript = projectilesObj.GetComponent<Projectiles>();
         projectilesScript.SetTarget(target);

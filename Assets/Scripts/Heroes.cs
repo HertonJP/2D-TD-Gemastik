@@ -27,12 +27,14 @@ public class Heroes : MonoBehaviour
         if(target == null)
         {
             FindTarget();
+            anim.SetTrigger("isIdle");
             return;
         }
 
         if (!inRange())
         {
             target = null;
+            
         }
         else
         {
@@ -40,6 +42,7 @@ public class Heroes : MonoBehaviour
         }
         if(timeUntilFire >= 1f / attackSpeed)
         {
+            anim.SetTrigger("isAttack");
             Attack();
             timeUntilFire = 0f;
         }
@@ -51,7 +54,6 @@ public class Heroes : MonoBehaviour
 
     private void Attack()
     {
-        anim.SetTrigger("isAttack");
         GameObject projectilesObj = Instantiate(projectilesPrefab, firingPoint.position, Quaternion.identity);
         Projectiles projectilesScript = projectilesObj.GetComponent<Projectiles>();
         projectilesScript.SetTarget(target);

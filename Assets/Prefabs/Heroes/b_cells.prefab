@@ -101,10 +101,12 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 8
-  projectilesPrefab: {fileID: 9195885523867978729, guid: f87e28e6c0a00d7428ef493c4d7fba68, type: 3}
+  projectilesPrefab: {fileID: 1156818624079900626, guid: bc9fad960150793488c57fcdfb22cb49, type: 3}
   firingPoint: {fileID: 1002932622469097329}
+  maxMana: 100
   targetingRange: 3
   attackSpeed: 1
+  mana: 0
 --- !u!95 &4767252738113148669
 Animator:
   serializedVersion: 5

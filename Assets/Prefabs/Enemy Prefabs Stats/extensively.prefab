@@ -866,7 +866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 501431882d5881544823a18fb2e8ce27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 2
+  HP: 5
   worth: 20
 --- !u!114 &8327217924117789898
 MonoBehaviour:
@@ -881,7 +881,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  distanceThreshold: 0.2
   rb: {fileID: 8327217924117789897}
 --- !u!1 &9212788324655068775
 GameObject:

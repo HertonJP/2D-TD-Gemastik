@@ -105,7 +105,7 @@ MonoBehaviour:
   firingPoint: {fileID: 1002932622469097329}
   maxMana: 100
   targetingRange: 3
-  attackSpeed: 1
+  attackSpeed: 0.5
   mana: 0
 --- !u!95 &4767252738113148669
 Animator:

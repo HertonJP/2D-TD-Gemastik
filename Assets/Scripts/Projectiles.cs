@@ -12,7 +12,9 @@ public class Projectiles : MonoBehaviour
     {
         target = _target;
     }
-
+    private void Start()
+    {
+    }
     private void Update()
     {
         if (!target)

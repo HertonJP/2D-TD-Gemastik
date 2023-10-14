@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BuildManager : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class BuildManager : MonoBehaviour
 
     [SerializeField] private HeroTiles[] heroes;
 
-    private int selectedHero = -1;
+    [SerializeField]private int selectedHero = -1;
 
     private void Awake()
     {

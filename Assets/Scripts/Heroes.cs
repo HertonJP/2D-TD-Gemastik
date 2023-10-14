@@ -14,7 +14,7 @@ public class Heroes : MonoBehaviour
     [SerializeField] private float attackSpeed = 1f;
     [SerializeField] private int mana;
     private Transform target;
-    private float timeUntilFire;
+    private float timeUntilFire = 2;
     private Animator anim;
 
     private void Start()
@@ -24,13 +24,12 @@ public class Heroes : MonoBehaviour
     }
     private void Update()
     {
-        if(target == null)
+        if (target == null)
         {
             FindTarget();
             anim.SetTrigger("isIdle");
             return;
         }
-
         if (!inRange())
         {
             target = null;
@@ -38,9 +37,11 @@ public class Heroes : MonoBehaviour
         }
         else
         {
+            SetAttackPointRotation attackPointRotation = firingPoint.GetComponent<SetAttackPointRotation>();
+            attackPointRotation.SetTarget(target);
             timeUntilFire += Time.deltaTime;
         }
-        if(timeUntilFire >= 1f / attackSpeed)
+        if(timeUntilFire >= (1f / attackSpeed))
         {
             anim.SetTrigger("isAttack");
             Attack();
@@ -54,10 +55,13 @@ public class Heroes : MonoBehaviour
 
     private void Attack()
     {
-        GameObject projectilesObj = Instantiate(projectilesPrefab, firingPoint.position, Quaternion.identity);
-        Projectiles projectilesScript = projectilesObj.GetComponent<Projectiles>();
-        projectilesScript.SetTarget(target);
-        Debug.Log("Attack");
+        
+        GameObject projectile = Instantiate(projectilesPrefab, transform.position,Quaternion.identity);
+        projectile.GetComponent<Projectiles>().SetTarget(target);
+        projectile.transform.rotation = firingPoint.rotation;
+        projectile.transform.eulerAngles += new Vector3(0, 0, 90);
+        //projectile.transform.rotation = Quaternion.Euler(0, 0, firingPoint.eulerAngles.z);
+     
         mana += 5;
     }
     private void Ulti()

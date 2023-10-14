@@ -21,7 +21,6 @@ public class Projectiles : MonoBehaviour
         }
 
         Vector2 direction = (target.position - transform.position).normalized;
-        transform.up = direction;
         transform.position += (Vector3)direction * projectilesSpeed * Time.deltaTime;
     }
 

@@ -7,74 +7,76 @@ public class Heroes : MonoBehaviour
 {
     [SerializeField] private LayerMask enemyMask;
     [SerializeField] private GameObject projectilesPrefab;
+    [SerializeField] protected int manaIncrease;
+    public GameObject _projectilesPrefab { get; private set;}
+
     [SerializeField] private Transform firingPoint;
+    public Transform _firingPoint { get; private set; }
 
-    [SerializeField] private int maxMana = 100;
+    [SerializeField] protected int maxMana = 100;
     [SerializeField] private float targetingRange = 3f;
-    [SerializeField] private float attackSpeed = 1f;
-    [SerializeField] private int mana;
-    private Transform target;
-    private float timeUntilFire = 2;
-    private Animator anim;
 
-    private void Start()
+    [SerializeField] private float attackSpeed = 1f;
+    public float _attackSpeed { get;  set; }
+
+    [SerializeField] protected int mana;
+
+    [SerializeField] protected Transform target;
+    protected float timeUntilFire = 2;
+    [SerializeField] AnimationState animState;
+
+    public virtual void Start()
     {
-        anim = gameObject.GetComponent<Animator>();
         mana = 0;
+
+        InitializeData();
     }
-    private void Update()
+
+    public virtual void Update()
     {
+
         if (target == null)
         {
             FindTarget();
-            anim.SetTrigger("isIdle");
+            animState.state = AnimationState.States.Idle;
             return;
         }
+
         if (!inRange())
         {
             target = null;
-            
         }
-        else
-        {
-            SetAttackPointRotation attackPointRotation = firingPoint.GetComponent<SetAttackPointRotation>();
-            attackPointRotation.SetTarget(target);
-            timeUntilFire += Time.deltaTime;
-        }
-        if(timeUntilFire >= (1f / attackSpeed))
-        {
-            anim.SetTrigger("isAttack");
-            Attack();
-            timeUntilFire = 0f;
-        }
-        if(mana == maxMana)
+
+        timeUntilFire += Time.deltaTime;
+        if (mana >= maxMana)
         {
             Ulti();
         }
+        if (timeUntilFire >= (1f / _attackSpeed) && target != null)
+        {
+            animState.state = AnimationState.States.Attack;
+            Attack();
+            timeUntilFire = 0f;
+        }
     }
 
-    private void Attack()
+    protected virtual void Attack()
     {
-        
-        GameObject projectile = Instantiate(projectilesPrefab, transform.position,Quaternion.identity);
-        projectile.GetComponent<Projectiles>().SetTarget(target);
-        projectile.transform.rotation = firingPoint.rotation;
-        projectile.transform.eulerAngles += new Vector3(0, 0, 90);
-        //projectile.transform.rotation = Quaternion.Euler(0, 0, firingPoint.eulerAngles.z);
-     
-        mana += 5;
+        mana += manaIncrease;
     }
-    private void Ulti()
+
+    protected virtual void Ulti()
     {   
         Debug.Log("ngeskill");
         mana = 0;
     }
+
     private bool inRange()
     {
         return Vector2.Distance(target.position, transform.position) <= targetingRange;
     }
 
-    private void FindTarget()
+    protected void FindTarget()
     {
         RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, (Vector2)transform.position, 0f, enemyMask);
         if(hits.Length > 0)
@@ -88,5 +90,12 @@ public class Heroes : MonoBehaviour
     {
         Handles.color = Color.cyan;
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
+    }
+
+    private void InitializeData()
+    {
+        _attackSpeed = attackSpeed;
+        _firingPoint = firingPoint;
+        _projectilesPrefab = projectilesPrefab;
     }
 }

@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3058498308516179598}
   - component: {fileID: 8079487498991229843}
-  - component: {fileID: 759031470}
+  - component: {fileID: 3965008761540723943}
   - component: {fileID: 2285040309283291760}
+  - component: {fileID: 8652756764502317727}
   m_Layer: 0
   m_Name: macrophag
   m_TagString: Untagged
@@ -86,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &759031470
+--- !u!114 &3965008761540723943
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,16 +96,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 227238762396973639}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8736fe600d90b9a46adfb43caa5cfac4, type: 3}
+  m_Script: {fileID: 11500000, guid: 925fc14a005f4804c948477e87139ee7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyMask:
     serializedVersion: 2
     m_Bits: 8
-  projectilesPrefab: {fileID: 5244363835714404221, guid: c0bff395de754094fa8a4fa5272bb1d8, type: 3}
-  firingPoint: {fileID: 3058498308516179598}
-  targetingRange: 1
-  attackSpeed: 1.5
+  projectilesPrefab: {fileID: 2448396248413492264, guid: 1e91462323226e14fa4d7cd151dc27ca, type: 3}
+  manaIncrease: 40
+  firingPoint: {fileID: 0}
+  maxMana: 100
+  targetingRange: 3
+  attackSpeed: 0.5
+  mana: 0
+  target: {fileID: 0}
+  animState: {fileID: 8652756764502317727}
+  hammer: {fileID: 5376445860212299701, guid: 0f8838b2fff45f54c832c581bb3196fb, type: 3}
+  hammerYOffset: 1.75
 --- !u!95 &2285040309283291760
 Animator:
   serializedVersion: 5
@@ -126,3 +134,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8652756764502317727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227238762396973639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f1af1a7132f6b449fa55cc39aabe2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 2285040309283291760}
+  state: 0
+  idleAnimName: macrophag_idle
+  attackAnimName: macrophag_attack
+  walkAnimName: macrophag_walk

@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2747098891613093677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 922552240667315306}
+  - component: {fileID: 5299548916641697026}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &922552240667315306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747098891613093677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7510883333578079162}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5299548916641697026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747098891613093677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c135ac78cbbdbe14384c99932ee1d980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  direction: {x: 0, y: 0}
 --- !u!1 &3702947525251399006
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,6 +58,7 @@ GameObject:
   - component: {fileID: 6379178227943574799}
   - component: {fileID: 617780295}
   - component: {fileID: 5805087658252618779}
+  - component: {fileID: 3438498208083126661}
   m_Layer: 0
   m_Name: dendritic_cells
   m_TagString: Untagged
@@ -30,7 +77,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 922552240667315306}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102,11 +150,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   projectilesPrefab: {fileID: 275771936448966364, guid: 39f30ace8fc4dd5408986f45472c5e7b, type: 3}
-  firingPoint: {fileID: 7510883333578079162}
+  manaIncrease: 0
+  firingPoint: {fileID: 922552240667315306}
   maxMana: 100
   targetingRange: 3
   attackSpeed: 0.5
   mana: 0
+  target: {fileID: 0}
+  animState: {fileID: 3438498208083126661}
 --- !u!95 &5805087658252618779
 Animator:
   serializedVersion: 5
@@ -128,3 +179,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3438498208083126661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3702947525251399006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f1af1a7132f6b449fa55cc39aabe2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 5805087658252618779}
+  state: 0
+  idleAnimName: 
+  attackAnimName: 
+  walkAnimName: 

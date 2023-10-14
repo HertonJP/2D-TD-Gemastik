@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4859494725505346339}
   - component: {fileID: 2011051257}
   - component: {fileID: 2011051256}
-  - component: {fileID: 2011051255}
+  - component: {fileID: 6901147164993958186}
   m_Layer: 0
   m_Name: memory_cells_projectile
   m_TagString: Untagged
@@ -28,14 +28,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4859494725505346338}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -14.748502, y: -9.656785, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: -0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &4859494725505346348
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -156,7 +156,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7296374, y: 0.5941391}
   m_EdgeRadius: 0
---- !u!114 &2011051255
+--- !u!114 &6901147164993958186
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,9 +165,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4859494725505346338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1304d1db4d4488d41834643b9e2df65f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0651bd6915483b34c9445abcb1de5065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 2011051257}
   projectilesSpeed: 5
   projectilesDamage: 1

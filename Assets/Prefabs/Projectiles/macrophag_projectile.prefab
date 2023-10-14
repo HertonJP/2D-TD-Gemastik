@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2448396248413492245}
   - component: {fileID: 2448396248413492266}
+  - component: {fileID: 6894308726343462898}
   - component: {fileID: 2448396248413492267}
+  - component: {fileID: 5019061818042269338}
   m_Layer: 0
   m_Name: macrophag_projectile
   m_TagString: Untagged
@@ -25,10 +27,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2448396248413492264}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -22.129204, y: -9.090064, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -85,6 +87,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6894308726343462898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448396248413492264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f77efd26409e50478f16eb1b5d70cb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilesSpeed: 5
+  projectilesDamage: 1
+  enemies: []
 --- !u!95 &2448396248413492267
 Animator:
   serializedVersion: 5
@@ -106,3 +123,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!58 &5019061818042269338
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448396248413492264}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.32401085, y: -0.2798283}
+  serializedVersion: 2
+  m_Radius: 1.1110008

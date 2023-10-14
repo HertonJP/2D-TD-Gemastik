@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1002932622469097329}
   - component: {fileID: 7253600586252465974}
-  - component: {fileID: 3424293354228509294}
   - component: {fileID: 4767252738113148669}
+  - component: {fileID: 4269187794812265506}
+  - component: {fileID: 3906255224708693619}
   m_Layer: 0
   m_Name: b_cells
   m_TagString: Untagged
@@ -87,27 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3424293354228509294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3831405664972779935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8736fe600d90b9a46adfb43caa5cfac4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyMask:
-    serializedVersion: 2
-    m_Bits: 8
-  projectilesPrefab: {fileID: 1156818624079900626, guid: bc9fad960150793488c57fcdfb22cb49, type: 3}
-  firingPoint: {fileID: 8741207452223257116}
-  maxMana: 100
-  targetingRange: 3
-  attackSpeed: 0.5
-  mana: 0
 --- !u!95 &4767252738113148669
 Animator:
   serializedVersion: 5
@@ -129,6 +109,49 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4269187794812265506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831405664972779935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f945cd264ddc094f9c1439e25a1f5d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 8
+  projectilesPrefab: {fileID: 1156818624079900626, guid: bc9fad960150793488c57fcdfb22cb49, type: 3}
+  manaIncrease: 0
+  firingPoint: {fileID: 8741207452223257116}
+  maxMana: 100
+  targetingRange: 3
+  attackSpeed: 0.5
+  mana: 0
+  target: {fileID: 0}
+  animState: {fileID: 3906255224708693619}
+  bonusAttSpeed: 0.5
+  bonusAttSpeedDuration: 0
+--- !u!114 &3906255224708693619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3831405664972779935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f1af1a7132f6b449fa55cc39aabe2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 4767252738113148669}
+  state: 0
+  idleAnimName: b_cells_idle
+  attackAnimName: b_cells_attack
+  walkAnimName: 
 --- !u!1 &8046551796371930671
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,3 +196,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c135ac78cbbdbe14384c99932ee1d980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  direction: {x: 0, y: 0}

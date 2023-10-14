@@ -2,24 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectiles : MonoBehaviour
+public class MovingProjectile : Projectiles
 {
-    private Transform target;
-    [SerializeField] private float projectilesSpeed = 5f;
-    [SerializeField] private int projectilesDamage = 1;
 
-    public void SetTarget(Transform _target)
+    // Update is called once per frame
+    void Update()
     {
-        target = _target;
-    }
-
-    private void Update()
-    {
-        if (!target)
-        {
-            return;
-        }
-
         Vector2 direction = (target.position - transform.position).normalized;
         transform.position += (Vector3)direction * projectilesSpeed * Time.deltaTime;
     }

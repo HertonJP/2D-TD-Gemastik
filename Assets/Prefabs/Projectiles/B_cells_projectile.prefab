@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1156818624079900637}
   - component: {fileID: 549841553}
   - component: {fileID: 549841555}
-  - component: {fileID: 549841554}
+  - component: {fileID: -3481984862328693533}
   m_Layer: 0
   m_Name: B_cells_projectile
   m_TagString: Untagged
@@ -156,7 +156,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7766342, y: 0.7466601}
   m_EdgeRadius: 0
---- !u!114 &549841554
+--- !u!114 &-3481984862328693533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,11 +165,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1156818624079900626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1304d1db4d4488d41834643b9e2df65f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0651bd6915483b34c9445abcb1de5065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectilesSpeed: 5
   projectilesDamage: 1
-  direction: {x: 0, y: 0, z: 0}
-  attackPoint: {fileID: 0}
-  targetPos: {x: 0, y: 0, z: 0}

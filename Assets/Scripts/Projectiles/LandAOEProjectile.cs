@@ -6,11 +6,6 @@ public class LandAOEProjectile : Projectiles
 {
     [SerializeField] protected List<enemyHealth> enemies = new();
 
-    private void OnEnable()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<enemyHealth>() != null)
@@ -26,7 +21,7 @@ public class LandAOEProjectile : Projectiles
             e.TakeDamage(projectilesDamage);
             
         }
-        Debug.Log(enemies.Count);
+        Debug.Log("Basic Attack hit: "+enemies.Count);
     }
 
     public void DestroyProjectile()

@@ -5,6 +5,7 @@ using UnityEngine;
 public class AI : MonoBehaviour
 {
     [SerializeField] private float speed = 2f;
+    public float _speed { get; private set; }
     [SerializeField] private Rigidbody2D rb;
 
     private Transform target;
@@ -42,5 +43,12 @@ public class AI : MonoBehaviour
         Vector2 direction = (target.position - transform.position).normalized;
 
         rb.velocity = direction * speed;
+    }
+
+    public IEnumerator Slowed(float duration, float speedDecreaeAmount)
+    {
+        _speed -= speedDecreaeAmount;
+        yield return new WaitForSeconds(duration);
+        _speed = speed;
     }
 }

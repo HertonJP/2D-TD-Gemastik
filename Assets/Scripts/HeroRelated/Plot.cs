@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class Plot : MonoBehaviour
 {
@@ -12,36 +13,16 @@ public class Plot : MonoBehaviour
     [SerializeField] Tilemap tileMap;
 
     [SerializeField] private GameObject hero;
-    private Color startColor;
-    private bool isFull = false;
 
-    private void Start()
-    {
-       // startColor = sr.color;
-    }
+    [SerializeField] private List<Button> characterShopButton;
 
     private void Update()
     {
         if (Input.GetMouseButtonUp(0))
         {
             PlaceCharacter();
-        }
-            
+        }   
     }
-
-    //private void OnMouseEnter()
-    //{
-    //    if (Time.timeScale != 0 && !isFull)
-    //    {
-    //        sr.color = hoverColor;
-    //    }
-
-    //}
-
-    //private void OnMouseExit()
-    //{
-    //    sr.color = startColor;
-    //}
 
     private void PlaceCharacter()
     {
@@ -51,16 +32,25 @@ public class Plot : MonoBehaviour
             {
                 return;
             }
+
             HeroTiles heroToSpawn = BuildManager.main.GetSelectedHero();
+
             if (heroToSpawn == null || heroToSpawn.cost > LevelManager.main.nutrition)
             {
                 return;
             }
+
             LevelManager.main.SpendCurrency(heroToSpawn.cost);
             Vector3 spawnPosition = hover.transform.position;
             hero = Instantiate(heroToSpawn.prefab, spawnPosition, Quaternion.identity);
-            Debug.Log(spawnPosition);
-            isFull = true;
+
+            CharactersManager.Instance.spawnedCharacters.Add(hero);
+            if(CharactersManager.Instance.spawnedCharacters.Count == 1)
+            {
+                CharactersManager.Instance.spawnedCharacters[0].GetComponent<Movement>().enabled = true;
+            }
+
+            characterShopButton[BuildManager.main.selectedHero].interactable = false;
             BuildManager.main.ResetSelectedHero();
             HeroHover.Instance.Activate(null);
             // reset hero

@@ -10,7 +10,7 @@ public class BuildManager : MonoBehaviour
 
     [SerializeField] private HeroTiles[] heroes;
 
-    [SerializeField]private int selectedHero = -1;
+    public int selectedHero = -1;
 
     private void Awake()
     {

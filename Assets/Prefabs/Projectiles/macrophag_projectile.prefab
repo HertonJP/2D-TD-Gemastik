@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6894308726343462898}
   - component: {fileID: 2448396248413492267}
   - component: {fileID: 5019061818042269338}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: macrophag_projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

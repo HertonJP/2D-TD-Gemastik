@@ -20,10 +20,13 @@ public class Heroes : MonoBehaviour
     public float _attackSpeed { get;  set; }
 
     [SerializeField] protected int mana;
-
+    [SerializeField] protected int damage;
+    public int _damage { get; set; }
     [SerializeField] protected Transform target;
     protected float timeUntilFire = 2;
     [SerializeField] AnimationState animState;
+
+    [SerializeField] Movement movement;
 
     public virtual void Start()
     {
@@ -34,6 +37,12 @@ public class Heroes : MonoBehaviour
 
     public virtual void Update()
     {
+        projectilesPrefab.GetComponent<Projectiles>()._projectilesDamage = _damage;
+        if (movement.horizontalMovement != 0 || movement.verticalMovement != 0)
+        {
+            animState.state = AnimationState.States.Walk;
+            return;
+        }
 
         if (target == null)
         {
@@ -94,6 +103,7 @@ public class Heroes : MonoBehaviour
 
     private void InitializeData()
     {
+        _damage = damage;
         _attackSpeed = attackSpeed;
         _firingPoint = firingPoint;
         _projectilesPrefab = projectilesPrefab;

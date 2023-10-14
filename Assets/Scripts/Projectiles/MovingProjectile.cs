@@ -6,15 +6,14 @@ public class MovingProjectile : Projectiles
 {
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         Vector2 direction = (target.position - transform.position).normalized;
         transform.position += (Vector3)direction * projectilesSpeed * Time.deltaTime;
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    public override void OnCollisionEnter2D(Collision2D other)
     {
-        other.gameObject.GetComponent<enemyHealth>().TakeDamage(projectilesDamage);
-        Destroy(gameObject);
+        base.OnCollisionEnter2D(other);
     }
 }

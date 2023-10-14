@@ -22,6 +22,7 @@ public class RangeHeroes : Heroes
     {
         base.Attack();
         GameObject projectile = Instantiate(_projectilesPrefab, transform.position, Quaternion.identity);
+        
         projectile.GetComponent<Projectiles>().SetTarget(target);
         projectile.transform.rotation = _firingPoint.rotation;
         projectile.transform.eulerAngles += new Vector3(0, 0, 90);

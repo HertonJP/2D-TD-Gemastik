@@ -7,6 +7,12 @@ public class Projectiles : MonoBehaviour
     protected Transform target;
     [SerializeField] protected float projectilesSpeed = 5f;
     [SerializeField] protected int projectilesDamage = 1;
+    public int _projectilesDamage { get; set; }
+
+    private void Start()
+    {
+        _projectilesDamage = projectilesDamage;
+    }
 
     public void SetTarget(Transform _target)
     {
@@ -20,5 +26,12 @@ public class Projectiles : MonoBehaviour
             return;
         }
 
+    }
+
+    public virtual void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log(_projectilesDamage);
+        other.gameObject.GetComponent<enemyHealth>().TakeDamage(_projectilesDamage);
+       
     }
 }

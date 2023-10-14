@@ -52,6 +52,8 @@ public class AnimationState : MonoBehaviour
 
         if (state == States.Walk)
         {
+
+
             if (anim.GetCurrentAnimatorStateInfo(0).IsName(walkAnimName) && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 1)
             {
                 return;

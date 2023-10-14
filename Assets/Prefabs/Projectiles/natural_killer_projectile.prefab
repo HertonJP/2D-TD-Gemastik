@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8578207023019650009}
   - component: {fileID: 1270537020}
   - component: {fileID: 1270537019}
-  - component: {fileID: -3342019784970821300}
-  m_Layer: 0
+  - component: {fileID: -1437676593495772133}
+  m_Layer: 7
   m_Name: natural_killer_projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2219434, y: 0.66444397}
   m_EdgeRadius: 0
---- !u!114 &-3342019784970821300
+--- !u!114 &-1437676593495772133
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,8 +165,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8578207023019650014}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0651bd6915483b34c9445abcb1de5065, type: 3}
+  m_Script: {fileID: 11500000, guid: 7896d59171eda4e418359e1d46c30347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectilesSpeed: 5
   projectilesDamage: 1
+  stunDuration: 5

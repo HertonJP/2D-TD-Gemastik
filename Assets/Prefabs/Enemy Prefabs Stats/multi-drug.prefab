@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 2229816523437518798}
   - component: {fileID: 2229816523437518796}
   - component: {fileID: 2229816523437518794}
+  - component: {fileID: -8591105415173422394}
   m_Layer: 3
   m_Name: multi-drug
   m_TagString: Untagged
@@ -360,6 +361,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rb: {fileID: 2229816523437518795}
+--- !u!114 &-8591105415173422394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807677997467340413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a526d9ce40ec04b99eb3e9cb664f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStunned: 0
+  duration: 0
 --- !u!1 &2901535197385917126
 GameObject:
   m_ObjectHideFlags: 0

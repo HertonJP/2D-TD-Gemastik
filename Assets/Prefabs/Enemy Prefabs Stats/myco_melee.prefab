@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: 4560890809374917897}
   - component: {fileID: 4560890809374917899}
   - component: {fileID: 4560890809374917901}
+  - component: {fileID: 6638471706060126345}
   m_Layer: 3
   m_Name: myco_melee
   m_TagString: Untagged
@@ -326,6 +327,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rb: {fileID: 4560890809374917903}
+--- !u!114 &6638471706060126345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4083715760474318010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a526d9ce40ec04b99eb3e9cb664f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStunned: 0
+  duration: 0
 --- !u!1 &4293947679263150251
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5376445860212299700}
   - component: {fileID: 2805454085874317430}
   - component: {fileID: -7547655274669790454}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: macrophag_skill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,3 +138,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies: []
   hammerDamage: 5
+  stunDuration: 0

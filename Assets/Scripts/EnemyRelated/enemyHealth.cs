@@ -6,8 +6,6 @@ public class enemyHealth : MonoBehaviour
 {
     [SerializeField] private int HP = 2;
     [SerializeField] private int worth = 20;
-    
-
 
     private bool isDestroyed = false;
     public void TakeDamage(int damage)

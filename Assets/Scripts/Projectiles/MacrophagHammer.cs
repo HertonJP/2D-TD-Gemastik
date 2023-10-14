@@ -7,16 +7,7 @@ public class MacrophagHammer : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private List<enemyHealth> enemies;
     [SerializeField] private int hammerDamage;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private float stunDuration;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,7 +21,7 @@ public class MacrophagHammer : MonoBehaviour
         {
             e.TakeDamage(hammerDamage);
         }
-        Debug.Log(enemies.Count);
+        Debug.Log("Hammer hit : "+enemies.Count);
     }
 
     public void DestroyHammer()

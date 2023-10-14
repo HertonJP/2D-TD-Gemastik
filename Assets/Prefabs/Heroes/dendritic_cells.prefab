@@ -193,6 +193,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 5805087658252618779}
   state: 0
-  idleAnimName: 
-  attackAnimName: 
-  walkAnimName: 
+  idleAnimName: dendritic_idle
+  attackAnimName: dendritic_attack
+  walkAnimName: dendritic_walk

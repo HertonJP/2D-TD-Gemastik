@@ -151,7 +151,7 @@ MonoBehaviour:
   state: 0
   idleAnimName: b_cells_idle
   attackAnimName: b_cells_attack
-  walkAnimName: 
+  walkAnimName: b_cells_walk
 --- !u!1 &8046551796371930671
 GameObject:
   m_ObjectHideFlags: 0

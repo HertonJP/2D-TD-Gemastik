@@ -147,9 +147,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 120994435811995012}
   state: 0
-  idleAnimName: 
-  attackAnimName: 
-  walkAnimName: 
+  idleAnimName: white_idle
+  attackAnimName: white_attack
+  walkAnimName: white_walk
 --- !u!1 &4022855125497680388
 GameObject:
   m_ObjectHideFlags: 0

@@ -193,6 +193,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 5579366309655436820}
   state: 0
-  idleAnimName: 
-  attackAnimName: 
-  walkAnimName: 
+  idleAnimName: memory_idle
+  attackAnimName: memory_attack
+  walkAnimName: memory_walk

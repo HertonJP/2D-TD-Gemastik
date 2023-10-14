@@ -147,9 +147,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 3032508906776325208}
   state: 0
-  idleAnimName: 
-  attackAnimName: 
-  walkAnimName: 
+  idleAnimName: killer_t_idle
+  attackAnimName: killer_t_attack
+  walkAnimName: killer_t_walk
 --- !u!1 &5989546660427253701
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,9 +24,10 @@ public class Heroes : MonoBehaviour
     public int _damage { get; set; }
     [SerializeField] protected Transform target;
     protected float timeUntilFire = 2;
-    [SerializeField] AnimationState animState;
+    [SerializeField] protected AnimationState animState;
 
     [SerializeField] Movement movement;
+    [SerializeField] protected List<Collider2D> hitTargets = new();
 
     public virtual void Start()
     {
@@ -44,6 +45,7 @@ public class Heroes : MonoBehaviour
             return;
         }
 
+        
         if (target == null)
         {
             FindTarget();
@@ -57,16 +59,7 @@ public class Heroes : MonoBehaviour
         }
 
         timeUntilFire += Time.deltaTime;
-        if (mana >= maxMana)
-        {
-            Ulti();
-        }
-        if (timeUntilFire >= (1f / _attackSpeed) && target != null)
-        {
-            animState.state = AnimationState.States.Attack;
-            Attack();
-            timeUntilFire = 0f;
-        }
+
     }
 
     protected virtual void Attack()
@@ -76,8 +69,6 @@ public class Heroes : MonoBehaviour
 
     protected virtual void Ulti()
     {   
-        Debug.Log("ngeskill");
-        mana = 0;
     }
 
     private bool inRange()
@@ -87,7 +78,12 @@ public class Heroes : MonoBehaviour
 
     protected void FindTarget()
     {
-        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, (Vector2)transform.position, 0f, enemyMask);
+        hitTargets.Clear();
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, transform.position, 0f, enemyMask);
+        foreach(RaycastHit2D r in hits)
+        {
+            hitTargets.Add(r.collider);
+        }
         if(hits.Length > 0)
         {
             target = hits[0].transform;

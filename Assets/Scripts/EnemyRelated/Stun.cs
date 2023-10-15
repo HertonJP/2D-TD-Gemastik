@@ -23,8 +23,9 @@ public class Stun : MonoBehaviour
 
     private IEnumerator StunCoroutine()
     {
-        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        isStunned = false;
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         yield return new WaitForSeconds(duration);
-        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        GetComponent<Rigidbody2D>().constraints = ~RigidbodyConstraints2D.FreezeAll;
     }
 }

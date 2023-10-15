@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SingleStun : MovingProjectile
+public class AOE_Slow : MovingProjectile
 {
     public bool isUlt = false;
-    public float stunDuration;
+    public List<AI> enemyAi = new();
+    public float duration;
+    public float slowedSpeed;
     public override void Update()
     {
         base.Update();
@@ -14,12 +16,17 @@ public class SingleStun : MovingProjectile
     public override void OnCollisionEnter2D(Collision2D other)
     {
         base.OnCollisionEnter2D(other);
-        if (other.collider.GetComponent<Stun>() != null && isUlt)
+        if (isUlt)
         {
-            other.collider.GetComponent<Stun>().duration = stunDuration;
-            other.collider.GetComponent<Stun>().isStunned = isUlt;
+            foreach(AI ai in enemyAi)
+            {
+                ai.slowDuration = duration;
+                ai.slowedSpeed = slowedSpeed;
+                ai.isSlowed = true;
+            }
             isUlt = false;
         }
+
         Destroy(gameObject);
     }
 }

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class enemyHealth : MonoBehaviour
 {
-    [SerializeField] private int HP = 2;
+    [SerializeField] private float HP = 2;
     [SerializeField] private int worth = 20;
-
+    bool debugged = false;
     private bool isDestroyed = false;
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
-        HP -= damage;
+        HP -= damage;      
         if(HP <= 0 && !isDestroyed)
         {
             Spawner.onEnemyDestroy.Invoke();

@@ -27,5 +27,7 @@ public class SetAttackPointRotation : MonoBehaviour
     public void SetTarget(Transform _target)
     {
         target = _target;
+        direction = (target.position - transform.position).normalized;
+        transform.up = direction;
     }
 }

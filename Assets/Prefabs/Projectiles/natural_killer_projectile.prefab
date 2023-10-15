@@ -170,4 +170,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilesSpeed: 5
   projectilesDamage: 1
+  isUlt: 0
   stunDuration: 5

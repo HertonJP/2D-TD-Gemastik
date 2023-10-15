@@ -5,6 +5,7 @@ using UnityEngine;
 public class NaturalKiller : RangeHeroes
 {
     [SerializeField] private float stunDuration;
+    [SerializeField] protected bool isUlt;
     public override void Start()
     {
         base.Start();
@@ -13,11 +14,31 @@ public class NaturalKiller : RangeHeroes
     public override void Update()
     {
         base.Update();
+        if ((mana + manaIncrease) >= maxMana)
+        {
+            Ulti();
+        }
+        if (timeUntilFire >= (1f / _attackSpeed) && target != null)
+        {
+            animState.state = AnimationState.States.Attack;
+            Attack();
+            timeUntilFire = 0f;
+        }
     }
 
     protected override void Ulti()
     {
+        isUlt = true;
         base.Ulti();
-        _projectilesPrefab.GetComponent<SingleStun>().stunDuration = stunDuration;
+    }
+
+    protected override void Attack()
+    {
+        base.Attack();
+        if (isUlt)
+            mana -= maxMana;
+        projectile.GetComponent<SingleStun>().isUlt = isUlt;
+        projectile.GetComponent<SingleStun>().stunDuration = stunDuration;
+        isUlt = false;
     }
 }

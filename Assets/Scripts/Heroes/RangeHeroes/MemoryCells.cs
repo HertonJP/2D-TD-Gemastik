@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class B_Cells : RangeHeroes
+public class MemoryCells : RangeHeroes
 {
-    [SerializeField] private float bonusAttSpeed;
-    [SerializeField] private float bonusAttSpeedDuration;
+    [SerializeField] private float slowDuration;
+    [SerializeField] private float slowedSpeed;
+    [SerializeField] private bool isUlt = false;
     // Start is called before the first frame update
     public override void Start()
     {
@@ -15,7 +16,7 @@ public class B_Cells : RangeHeroes
     public override void Update()
     {
         base.Update();
-        if (mana >= maxMana)
+        if ((mana+manaIncrease) >= maxMana)
         {
             Ulti();
         }
@@ -29,16 +30,18 @@ public class B_Cells : RangeHeroes
 
     protected override void Ulti()
     {
-        StartCoroutine(AttackSpeedBonus());
+        isUlt = true;
         base.Ulti();
-
     }
 
-    private IEnumerator AttackSpeedBonus()
+    protected override void Attack()
     {
-        mana -= maxMana;
-        _attackSpeed += bonusAttSpeed;
-        yield return new WaitForSeconds(bonusAttSpeedDuration);
-        _attackSpeed -= bonusAttSpeed;
+        base.Attack();
+        if (isUlt)
+            mana -= maxMana;
+        projectile.GetComponent<AOE_Slow>().isUlt = isUlt;
+        projectile.GetComponent<AOE_Slow>().duration = slowDuration;
+        projectile.GetComponent<AOE_Slow>().slowedSpeed = slowedSpeed;
+        isUlt = false;
     }
 }

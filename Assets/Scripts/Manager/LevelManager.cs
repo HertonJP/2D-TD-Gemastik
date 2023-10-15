@@ -29,7 +29,6 @@ public class LevelManager : MonoBehaviour
     {
         if (amount <= nutrition)
         {
-            Debug.Log("Beli item");
             nutrition -= amount;
             return true;
         }

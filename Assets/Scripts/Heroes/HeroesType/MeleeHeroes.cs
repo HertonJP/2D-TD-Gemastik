@@ -18,6 +18,7 @@ public class MeleeHeroes : Heroes
 
     public void MeleeAttack()
     {
-        Instantiate(_projectilesPrefab, target.position, Quaternion.identity);
+        if(target!=null)
+            Instantiate(_projectilesPrefab, target.position, Quaternion.identity);
     }
 }

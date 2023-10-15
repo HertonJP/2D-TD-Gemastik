@@ -5,6 +5,7 @@ using UnityEngine;
 public class WhiteCell : RangeHeroes
 {
     [SerializeField] private int bonusAtt;
+    [SerializeField] protected bool isUlt;
     // Start is called before the first frame update
     public override void Start()
     {
@@ -14,12 +15,30 @@ public class WhiteCell : RangeHeroes
     public override void Update()
     {
         base.Update();
+        if ((mana+manaIncrease) >= maxMana)
+        {
+            Ulti();
+        }
+        if (timeUntilFire >= (1f / _attackSpeed) && target != null)
+        {
+            animState.state = AnimationState.States.Attack;
+            Attack();
+            timeUntilFire = 0f;
+        }
     }
 
     protected override void Ulti()
     {
+        isUlt = true;
         base.Ulti();
-        _projectilesPrefab.GetComponent<DealCritDamage>().critDamage = bonusAtt;
-        _projectilesPrefab.GetComponent<DealCritDamage>().isCrit = true;
+    }
+    protected override void Attack()
+    {
+        base.Attack();
+        if (isUlt)
+            mana -= maxMana;
+        projectile.GetComponent<DealCritDamage>().isCrit = isUlt;
+        projectile.GetComponent<DealCritDamage>().critDamage = bonusAtt;
+        isUlt = false;
     }
 }

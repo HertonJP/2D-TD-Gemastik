@@ -14,12 +14,24 @@ public class Macrophag : MeleeHeroes
     public override void Update()
     {
         base.Update();
+        if (mana >= maxMana)
+        {
+            Ulti();
+        }
+        if (timeUntilFire >= (1f / _attackSpeed) && target != null)
+        {
+            animState.state = AnimationState.States.Attack;
+            Attack();
+            timeUntilFire = 0f;
+        }
     }
 
     protected override void Ulti()
     {
+        mana -= maxMana;
         base.Ulti();
         Instantiate(hammer,new Vector2(target.position.x,target.position.y+hammerYOffset), Quaternion.identity);
         timeUntilFire = 0;
+        return;
     }
 }

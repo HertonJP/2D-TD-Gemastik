@@ -21,7 +21,14 @@ public class Plot : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             PlaceCharacter();
-        }   
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            BuildManager.main.ResetSelectedHero();
+            HeroHover.Instance.Activate(null);
+            hero = null;
+        }
     }
 
     private void PlaceCharacter()

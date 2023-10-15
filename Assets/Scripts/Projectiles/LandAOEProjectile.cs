@@ -19,9 +19,7 @@ public class LandAOEProjectile : Projectiles
         foreach(enemyHealth e in enemies)
         {
             e.TakeDamage(projectilesDamage);
-            
         }
-        Debug.Log("Basic Attack hit: "+enemies.Count);
     }
 
     public void DestroyProjectile()

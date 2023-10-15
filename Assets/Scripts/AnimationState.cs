@@ -33,6 +33,11 @@ public class AnimationState : MonoBehaviour
             {
                 return;
             }
+            if(anim.GetCurrentAnimatorStateInfo(0).IsName(attackAnimName) && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 1)
+            {
+                return;
+            }
+
             PlayIdleAnim();
         }
             
@@ -42,10 +47,11 @@ public class AnimationState : MonoBehaviour
             if (anim.GetCurrentAnimatorStateInfo(0).IsName(attackAnimName) && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 1)
             {
                 return;
-            }else if (anim.GetCurrentAnimatorStateInfo(0).IsName(attackAnimName) && anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+            }else if (anim.GetCurrentAnimatorStateInfo(0).IsName(attackAnimName) && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
             {
                 state = States.Idle;
             }
+            
             PlayAttackAnim();
         }
             

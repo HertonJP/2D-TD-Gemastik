@@ -14,7 +14,7 @@ public class Heroes : MonoBehaviour
     public Transform _firingPoint { get; private set; }
 
     [SerializeField] protected int maxMana = 100;
-    [SerializeField] private float targetingRange = 3f;
+    public float targetingRange = 3f;
 
     [SerializeField] private float attackSpeed = 1f;
     public float _attackSpeed { get;  set; }
@@ -38,10 +38,22 @@ public class Heroes : MonoBehaviour
 
     public virtual void Update()
     {
+        
         projectilesPrefab.GetComponent<Projectiles>()._projectilesDamage = _damage;
-        if (movement.horizontalMovement != 0 || movement.verticalMovement != 0)
+        if ((movement.horizontalMovement != 0 || movement.verticalMovement != 0) && movement.stamina >0)
         {
+            if (movement.horizontalMovement < 0)
+            {
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
+
+            if (movement.horizontalMovement > 0)
+            {
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
+
             animState.state = AnimationState.States.Walk;
+            timeUntilFire = 0;
             return;
         }
 

@@ -26,7 +26,7 @@ public class Plot : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             BuildManager.main.ResetSelectedHero();
-            HeroHover.Instance.Activate(null);
+            HeroHover.Instance.ResetPreviewHero();
             hero = null;
         }
     }
@@ -48,18 +48,19 @@ public class Plot : MonoBehaviour
             }
 
             LevelManager.main.SpendCurrency(heroToSpawn.cost);
-            Vector3 spawnPosition = hover.transform.position;
+            Vector2 spawnPosition = hover.transform.position;
             hero = Instantiate(heroToSpawn.prefab, spawnPosition, Quaternion.identity);
 
             CharactersManager.Instance.spawnedCharacters.Add(hero);
             if(CharactersManager.Instance.spawnedCharacters.Count == 1)
             {
                 CharactersManager.Instance.spawnedCharacters[0].GetComponent<Movement>().enabled = true;
+                CharactersManager.Instance.spawnedCharacters[0].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             }
 
             characterShopButton[BuildManager.main.selectedHero].interactable = false;
             BuildManager.main.ResetSelectedHero();
-            HeroHover.Instance.Activate(null);
+            HeroHover.Instance.ResetPreviewHero();
             // reset hero
             hero = null;
         }

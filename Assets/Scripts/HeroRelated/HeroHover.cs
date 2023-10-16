@@ -8,6 +8,8 @@ public class HeroHover : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+    public Transform heroPreview;
+
     public static HeroHover Instance
     {
         get
@@ -30,6 +32,7 @@ public class HeroHover : MonoBehaviour
 
         instance = this;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        heroPreview = transform.GetChild(0);
         DontDestroyOnLoad(this.gameObject);
     }
 
@@ -41,11 +44,24 @@ public class HeroHover : MonoBehaviour
     private void followMouse()
     {
         transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
     }
 
     public void Activate(Sprite sprite)
     {
         this.spriteRenderer.sprite = sprite;
+    }
+
+    public void ActivatePreview(int index)
+    {
+        ResetPreviewHero();
+        heroPreview.GetChild(index).gameObject.SetActive(true);
+    }
+
+    public void ResetPreviewHero()
+    {
+        for(int i=0; i<heroPreview.childCount; i++)
+        {
+            heroPreview.GetChild(i).gameObject.SetActive(false);
+        }
     }
 }

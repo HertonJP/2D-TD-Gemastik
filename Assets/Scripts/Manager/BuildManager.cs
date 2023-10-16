@@ -27,8 +27,7 @@ public class BuildManager : MonoBehaviour
         selectedHero = _selectedHero;
         if (selectedHero >= 0)
         {
-            Sprite selectedSprite = GetSelectedHero().heroSprites.Sprite;
-            HeroHover.Instance.Activate(selectedSprite);
+            heroHover.ActivatePreview(selectedHero);
         }
     }
 

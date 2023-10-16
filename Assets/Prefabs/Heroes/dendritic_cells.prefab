@@ -404,7 +404,7 @@ MonoBehaviour:
   horizontalMovement: 0
   verticalMovement: 0
   stamina: 0
-  maxStamina: 5
+  maxStamina: 100
   moveSpeed: 2
   rb: {fileID: 0}
   staminaRegen: 0.01
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad245a05dd001d74581b86c98951473e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visual: {fileID: 0}
+  visual: {fileID: 4265669067174579498}
 --- !u!70 &1905996456033894447
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

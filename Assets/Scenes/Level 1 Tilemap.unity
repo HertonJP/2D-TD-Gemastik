@@ -2407,14 +2407,14 @@ MonoBehaviour:
     name: Macrophage
     cost: 2
     prefab: {fileID: 227238762396973639, guid: 15acf1610a15cf54588377e45aa07033, type: 3}
-  - heroSprites: {fileID: 2061737876}
-    name: Dendritic
-    cost: 2
-    prefab: {fileID: 3702947525251399006, guid: 5b8cfa1f5f2cf83468177bee5f0b7f6f, type: 3}
   - heroSprites: {fileID: 880029177}
     name: Natural Killer
     cost: 3
     prefab: {fileID: 1168122359678345284, guid: eed597985adfc7d4c9b4fe46be9c6ab9, type: 3}
+  - heroSprites: {fileID: 2061737876}
+    name: Dendritic
+    cost: 2
+    prefab: {fileID: 3702947525251399006, guid: 5b8cfa1f5f2cf83468177bee5f0b7f6f, type: 3}
   - heroSprites: {fileID: 1932544649}
     name: B Cell
     cost: 3
@@ -4634,7 +4634,7 @@ GameObject:
   - component: {fileID: 880029177}
   - component: {fileID: 880029178}
   m_Layer: 5
-  m_Name: Natural Killer Button
+  m_Name: Dendritic Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4749,7 +4749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 871695db464610f4c876239560c47789, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd9ba777e11c3194e9f69c1efc7563ef, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10288,7 +10288,7 @@ GameObject:
   - component: {fileID: 2061737876}
   - component: {fileID: 2061737877}
   m_Layer: 5
-  m_Name: Dendritic Button
+  m_Name: Naturaal Killer Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10403,7 +10403,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd9ba777e11c3194e9f69c1efc7563ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 871695db464610f4c876239560c47789, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

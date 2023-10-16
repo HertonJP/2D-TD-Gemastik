@@ -24,7 +24,7 @@ public class Heroes : MonoBehaviour
     public int _damage { get; set; }
     [SerializeField] protected Transform target;
     protected float timeUntilFire = 2;
-    [SerializeField] protected AnimationState animState;
+    public AnimationState animState;
 
     [SerializeField] Movement movement;
     [SerializeField] protected List<Collider2D> hitTargets = new();
@@ -40,7 +40,8 @@ public class Heroes : MonoBehaviour
     {
         
         projectilesPrefab.GetComponent<Projectiles>()._projectilesDamage = _damage;
-        if ((movement.horizontalMovement != 0 || movement.verticalMovement != 0) && movement.stamina >0)
+
+        if ((movement.horizontalMovement != 0 || movement.verticalMovement != 0) && movement.stamina > 0 && movement.enabled == true)
         {
             if (movement.horizontalMovement < 0)
             {

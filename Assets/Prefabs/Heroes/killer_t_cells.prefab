@@ -195,7 +195,7 @@ MonoBehaviour:
   horizontalMovement: 0
   verticalMovement: 0
   stamina: 0
-  maxStamina: 5
+  maxStamina: 100
   moveSpeed: 2
   rb: {fileID: 0}
   staminaRegen: 0.01

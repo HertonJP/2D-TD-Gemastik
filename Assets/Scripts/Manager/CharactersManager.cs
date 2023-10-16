@@ -19,8 +19,11 @@ public class CharactersManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             spawnedCharacters[currIndex].GetComponent<Movement>().enabled = false;
+            spawnedCharacters[currIndex].GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            spawnedCharacters[currIndex].GetComponent<Heroes>().animState.state = AnimationState.States.Idle;
             spawnedCharacters[currIndex].GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
             currIndex++;
+            Debug.Log(spawnedCharacters[currIndex - 1].GetComponent<Heroes>().animState.state);
             if (currIndex == spawnedCharacters.Count)
             {
                 currIndex = 0;

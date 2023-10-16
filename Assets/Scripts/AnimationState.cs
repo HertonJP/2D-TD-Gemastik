@@ -82,4 +82,12 @@ public class AnimationState : MonoBehaviour
         anim.Play(walkAnimName);
     }
 
+    public void StopPlay()
+    {
+        if(anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 1)
+        {
+            anim.StopPlayback();
+        }
+    }
+
 }
